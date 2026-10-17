@@ -3,49 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rahel Baig Moghal — Cloud Contact Center Architect &amp; Systems Engineer</title>
-  <meta name="description" content="Rahel Baig Moghal. AWS Serverless &amp; Amazon Connect Specialist, Creator of Fahm (com.rahel.fahm), Relay CI/CD Engine, and Agentic Tooling Developer." />
+  <title>Rahel Baig Moghal — Software Engineer &amp; Systems Builder</title>
+  <meta name="description" content="Personal portfolio of Rahel Baig Moghal. Software engineer working on offline-first mobile apps, enterprise cloud telephony (Amazon Connect), and local agent tooling." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <style>
     :root {
-      --bg-base: #07080b;
-      --bg-surface: #0e1017;
-      --bg-elevated: #151823;
-      --bg-card: rgba(14, 16, 23, 0.85);
-      --bg-hover: #1c202e;
-      --border-subtle: rgba(255, 255, 255, 0.08);
-      --border-strong: rgba(255, 255, 255, 0.16);
-      --border-glow: rgba(255, 255, 255, 0.24);
-      --text-primary: #f8fafc;
-      --text-secondary: #94a3b8;
-      --text-tertiary: #64748b;
+      --bg: #090a0f;
+      --bg-surface: #10121a;
+      --bg-elevated: #161924;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(255, 255, 255, 0.18);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
       
       --accent-emerald: #10b981;
-      --accent-emerald-dim: rgba(16, 185, 129, 0.12);
-      --accent-emerald-border: rgba(16, 185, 129, 0.3);
-
       --accent-amber: #f59e0b;
-      --accent-amber-dim: rgba(245, 158, 11, 0.12);
-      --accent-amber-border: rgba(245, 158, 11, 0.3);
-
       --accent-indigo: #6366f1;
-      --accent-indigo-dim: rgba(99, 102, 241, 0.12);
-      --accent-indigo-border: rgba(99, 102, 241, 0.3);
-
-      --accent-cyan: #06b6d4;
-      --accent-cyan-dim: rgba(6, 182, 212, 0.12);
-      --accent-cyan-border: rgba(6, 182, 212, 0.3);
-
+      
       --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
       --font-arabic: 'Amiri', serif;
-      --radius-sm: 4px;
-      --radius-md: 8px;
-      --radius-lg: 12px;
-      --radius-xl: 16px;
     }
 
     * {
@@ -57,21 +38,16 @@
     html {
       scroll-behavior: smooth;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
 
     body {
       font-family: var(--font-sans);
-      background-color: var(--bg-base);
-      color: var(--text-primary);
-      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.7;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      background-image: 
-        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.07), transparent 70%),
-        radial-gradient(ellipse 60% 40% at 90% 20%, rgba(16, 185, 129, 0.05), transparent 60%);
-      background-attachment: fixed;
     }
 
     ::selection {
@@ -82,42 +58,32 @@
     a {
       color: inherit;
       text-decoration: none;
-      transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
-    }
-
-    code {
-      font-family: var(--font-mono);
-      font-size: 0.82em;
-      background: var(--bg-elevated);
-      border: 1px solid var(--border-subtle);
-      padding: 2px 6px;
-      border-radius: var(--radius-sm);
-      color: #e2e8f0;
+      transition: all 0.15s ease;
     }
 
     .container {
-      max-width: 1140px;
+      max-width: 780px;
       margin: 0 auto;
       padding: 0 24px;
       width: 100%;
     }
 
-    /* Header & Navigation */
+    /* Navigation */
     header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(7, 8, 11, 0.88);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border-subtle);
+      background: rgba(9, 10, 15, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
     }
 
     .nav-bar {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 68px;
+      height: 64px;
     }
 
     .brand {
@@ -127,39 +93,24 @@
       cursor: pointer;
     }
 
-    .brand-monogram {
-      width: 32px;
-      height: 32px;
-      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
-      color: #07080b;
+    .brand-avatar {
+      width: 30px;
+      height: 30px;
+      background: #ffffff;
+      color: #090a0f;
       font-family: var(--font-mono);
       font-weight: 700;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: var(--radius-sm);
-      letter-spacing: -0.04em;
-      box-shadow: 0 0 16px rgba(255, 255, 255, 0.15);
-    }
-
-    .brand-meta {
-      display: flex;
-      flex-direction: column;
+      border-radius: 6px;
     }
 
     .brand-name {
       font-weight: 600;
-      font-size: 0.94rem;
-      letter-spacing: -0.015em;
-      color: var(--text-primary);
-      line-height: 1.2;
-    }
-
-    .brand-role {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      color: var(--text-tertiary);
+      font-size: 0.95rem;
+      letter-spacing: -0.01em;
     }
 
     .nav-menu {
@@ -169,1079 +120,385 @@
       list-style: none;
     }
 
-    .nav-item {
-      padding: 7px 13px;
+    .nav-btn {
+      padding: 6px 12px;
       font-size: 0.84rem;
-      font-weight: 500;
-      color: var(--text-secondary);
+      color: var(--text-muted);
       background: transparent;
       border: 1px solid transparent;
-      border-radius: var(--radius-sm);
+      border-radius: 6px;
       cursor: pointer;
       font-family: var(--font-sans);
       transition: all 0.15s ease;
     }
 
-    .nav-item:hover {
-      color: var(--text-primary);
-      background: var(--bg-elevated);
-    }
-
-    .nav-item.active {
-      color: var(--text-primary);
-      background: var(--bg-elevated);
-      border-color: var(--border-strong);
-    }
-
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .nav-external {
-      padding: 6px 12px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: var(--text-primary);
+    .nav-btn:hover {
+      color: var(--text-main);
       background: var(--bg-surface);
-      border: 1px solid var(--border-strong);
-      border-radius: var(--radius-sm);
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
     }
 
-    .nav-external:hover {
-      background: var(--text-primary);
-      color: var(--bg-base);
-      border-color: var(--text-primary);
+    .nav-btn.active {
+      color: var(--text-main);
+      background: var(--bg-surface);
+      border-color: var(--border);
     }
 
     /* Views */
     main {
       flex: 1;
-    }
-
-    .view-section {
-      display: none;
       padding: 56px 0 96px;
-      animation: fadeIn 0.25s ease-out;
     }
 
-    .view-section.active {
+    .view-pane {
+      display: none;
+      animation: fadeIn 0.2s ease-out;
+    }
+
+    .view-pane.active {
       display: block;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(6px); }
+      from { opacity: 0; transform: translateY(4px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Eyebrow & Badges */
-    .eyebrow {
+    /* Editorial Story Styling */
+    .hero-kicker {
       font-family: var(--font-mono);
-      font-size: 0.74rem;
+      font-size: 0.78rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: var(--text-tertiary);
+      color: var(--accent-emerald);
       margin-bottom: 16px;
       display: flex;
       align-items: center;
       gap: 8px;
-      flex-wrap: wrap;
     }
 
-    .status-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
-      padding: 4px 12px;
-      background: rgba(16, 185, 129, 0.08);
-      color: #34d399;
-      border: 1px solid rgba(16, 185, 129, 0.25);
-      border-radius: 999px;
-      margin-bottom: 20px;
-    }
-
-    .status-dot {
+    .dot-live {
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background-color: var(--accent-emerald);
+      background: var(--accent-emerald);
       box-shadow: 0 0 8px var(--accent-emerald);
-      animation: pulseDot 2s infinite ease-in-out;
     }
 
-    @keyframes pulseDot {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.85); }
+    .hero-heading {
+      font-size: clamp(2rem, 4.5vw, 2.75rem);
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      line-height: 1.2;
+      color: #ffffff;
+      margin-bottom: 24px;
     }
 
-    /* Hero Section */
-    .hero {
-      padding-bottom: 60px;
-      border-bottom: 1px solid var(--border-subtle);
+    .story-intro {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 48px;
+    }
+
+    .story-intro strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    /* Story Chapters (Sections) */
+    .chapter {
       margin-bottom: 64px;
     }
 
-    .hero-title {
-      font-size: clamp(2.2rem, 4.2vw, 3.4rem);
-      font-weight: 800;
-      letter-spacing: -0.04em;
-      line-height: 1.12;
+    .chapter-label {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-dim);
+      margin-bottom: 12px;
+    }
+
+    .chapter-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
       color: #ffffff;
-      max-width: 940px;
-      margin-bottom: 22px;
+      margin-bottom: 16px;
     }
 
-    .hero-title .gradient-text {
-      background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .prose {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 24px;
     }
 
-    .hero-lead {
-      font-size: 1.15rem;
-      color: var(--text-secondary);
-      max-width: 820px;
-      line-height: 1.68;
-      margin-bottom: 32px;
-      font-weight: 400;
-    }
-
-    .hero-lead strong {
-      color: var(--text-primary);
+    .prose strong {
+      color: var(--text-main);
       font-weight: 600;
     }
 
-    /* Metrics Strip */
-    .metrics-bar {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
+    /* Project Case Study Story Cards */
+    .story-card {
       background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 18px 24px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
       margin-bottom: 32px;
+      transition: border-color 0.2s ease;
     }
 
-    .metric-item {
+    .story-card:hover {
+      border-color: var(--border-hover);
+    }
+
+    .card-meta-top {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
-    .metric-value {
+    .card-badge {
       font-family: var(--font-mono);
-      font-size: 1.25rem;
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-fahm {
+      background: rgba(16, 185, 129, 0.12);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .badge-relay {
+      background: rgba(245, 158, 11, 0.12);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .badge-agents {
+      background: rgba(99, 102, 241, 0.12);
+      color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+    }
+
+    .card-project-title {
+      font-size: 1.35rem;
       font-weight: 700;
       color: #ffffff;
       letter-spacing: -0.02em;
-    }
-
-    .metric-value.emerald { color: #34d399; }
-    .metric-value.amber { color: #fbbf24; }
-    .metric-value.indigo { color: #818cf8; }
-
-    .metric-label {
-      font-size: 0.74rem;
-      color: var(--text-tertiary);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-top: 4px;
-      font-weight: 500;
-    }
-
-    .tech-strip {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 36px;
-    }
-
-    .tech-tag {
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      color: var(--text-secondary);
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      padding: 4px 10px;
-      border-radius: var(--radius-sm);
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .tech-tag.highlight {
-      border-color: rgba(99, 102, 241, 0.35);
-      color: #c7d2fe;
-      background: rgba(99, 102, 241, 0.08);
-    }
-
-    .btn-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-    }
-
-    .btn {
-      font-family: var(--font-sans);
-      font-size: 0.875rem;
-      font-weight: 500;
-      padding: 10px 18px;
-      border-radius: var(--radius-md);
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.15s ease;
-      border: 1px solid transparent;
-      text-decoration: none;
-    }
-
-    .btn-solid {
-      background: #ffffff;
-      color: #07080b;
-      border-color: #ffffff;
-      font-weight: 600;
-    }
-
-    .btn-solid:hover {
-      background: #e2e8f0;
-      border-color: #e2e8f0;
-      transform: translateY(-1px);
-    }
-
-    .btn-outline {
-      background: var(--bg-surface);
-      color: var(--text-primary);
-      border-color: var(--border-strong);
-    }
-
-    .btn-outline:hover {
-      background: var(--bg-elevated);
-      border-color: var(--text-secondary);
-      transform: translateY(-1px);
-    }
-
-    .btn-ghost {
-      background: transparent;
-      color: var(--text-secondary);
-      border-color: var(--border-subtle);
-    }
-
-    .btn-ghost:hover {
-      color: var(--text-primary);
-      border-color: var(--border-strong);
-      background: var(--bg-surface);
-    }
-
-    /* Section Headers */
-    .section-block {
-      margin-bottom: 80px;
-    }
-
-    .section-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      margin-bottom: 28px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--border-subtle);
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .section-title {
-      font-size: 1.35rem;
-      font-weight: 700;
-      letter-spacing: -0.025em;
-      color: var(--text-primary);
+      margin-bottom: 6px;
       display: flex;
       align-items: center;
       gap: 10px;
     }
 
-    .section-meta {
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      color: var(--text-tertiary);
-      letter-spacing: 0.05em;
-    }
-
-    /* Featured Project Showcase: 3 High-Conversion Cards */
-    .cards-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-    }
-
-    .showcase-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-xl);
-      overflow: hidden;
-      transition: all 0.25s ease;
-      position: relative;
-    }
-
-    .showcase-card:hover {
-      border-color: var(--border-strong);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
-    }
-
-    .showcase-card.theme-fahm {
-      background: linear-gradient(180deg, rgba(16, 185, 129, 0.04) 0%, var(--bg-surface) 35%);
-      border-color: rgba(16, 185, 129, 0.22);
-    }
-    .showcase-card.theme-fahm:hover {
-      border-color: rgba(16, 185, 129, 0.45);
-    }
-
-    .showcase-card.theme-relay {
-      background: linear-gradient(180deg, rgba(245, 158, 11, 0.04) 0%, var(--bg-surface) 35%);
-      border-color: rgba(245, 158, 11, 0.22);
-    }
-    .showcase-card.theme-relay:hover {
-      border-color: rgba(245, 158, 11, 0.45);
-    }
-
-    .showcase-card.theme-agents {
-      background: linear-gradient(180deg, rgba(99, 102, 241, 0.04) 0%, var(--bg-surface) 35%);
-      border-color: rgba(99, 102, 241, 0.22);
-    }
-    .showcase-card.theme-agents:hover {
-      border-color: rgba(99, 102, 241, 0.45);
-    }
-
-    .card-main {
-      padding: 36px 36px 32px;
-    }
-
-    .card-top-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 22px;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .card-identity {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-    }
-
-    .card-emblem {
-      width: 56px;
-      height: 56px;
-      border-radius: var(--radius-md);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-    }
-
-    .card-emblem.fahm {
-      background: #04241b;
-      border: 1px solid rgba(16, 185, 129, 0.4);
-      color: #34d399;
+    .arabic-emblem {
       font-family: var(--font-arabic);
-      font-size: 1.85rem;
-      font-weight: 700;
-    }
-
-    .card-emblem.relay {
-      background: #231604;
-      border: 1px solid rgba(245, 158, 11, 0.4);
-      color: #fbbf24;
-    }
-
-    .card-emblem.agents {
-      background: #14132c;
-      border: 1px solid rgba(99, 102, 241, 0.4);
-      color: #a5b4fc;
-    }
-
-    .card-title-group h3 {
-      font-size: 1.45rem;
-      font-weight: 700;
-      letter-spacing: -0.025em;
-      color: #ffffff;
-      line-height: 1.2;
-      margin-bottom: 4px;
+      font-size: 1.4rem;
+      color: #34d399;
+      line-height: 1;
     }
 
     .card-tagline {
       font-family: var(--font-mono);
-      font-size: 0.82rem;
-      color: var(--text-tertiary);
-    }
-
-    .card-pills {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .pill {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      font-weight: 500;
-      padding: 4px 10px;
-      border-radius: var(--radius-sm);
-      white-space: nowrap;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .pill-emerald {
-      background: var(--accent-emerald-dim);
-      color: #34d399;
-      border: 1px solid var(--accent-emerald-border);
-    }
-
-    .pill-amber {
-      background: var(--accent-amber-dim);
-      color: #fbbf24;
-      border: 1px solid var(--accent-amber-border);
-    }
-
-    .pill-indigo {
-      background: var(--accent-indigo-dim);
-      color: #a5b4fc;
-      border: 1px solid var(--accent-indigo-border);
-    }
-
-    .pill-neutral {
-      background: var(--bg-elevated);
-      color: var(--text-secondary);
-      border: 1px solid var(--border-strong);
-    }
-
-    .card-desc {
-      font-size: 1rem;
-      color: var(--text-secondary);
-      line-height: 1.65;
-      margin-bottom: 24px;
-      max-width: 980px;
-    }
-
-    .card-badges-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 28px;
-    }
-
-    .badge-chip {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      padding: 4px 10px;
-      border-radius: var(--radius-sm);
-      background: var(--bg-elevated);
-      border: 1px solid var(--border-subtle);
-      color: #e2e8f0;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    /* 3 Architectural Pillars inside Card */
-    .pillars-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-bottom: 28px;
-    }
-
-    .pillar-box {
-      background: rgba(10, 12, 17, 0.7);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 18px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .pillar-header {
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .theme-fahm .pillar-header { color: #34d399; }
-    .theme-relay .pillar-header { color: #fbbf24; }
-    .theme-agents .pillar-header { color: #a5b4fc; }
-
-    .pillar-body {
-      font-size: 0.86rem;
-      color: var(--text-secondary);
-      line-height: 1.52;
-    }
-
-    .card-actions-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 14px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border-subtle);
-    }
-
-    .toggle-case-study {
-      background: transparent;
-      border: 1px solid var(--border-strong);
-      color: var(--text-primary);
-      padding: 8px 14px;
-      border-radius: var(--radius-sm);
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.2s ease;
-    }
-
-    .toggle-case-study:hover {
-      background: var(--bg-elevated);
-      border-color: var(--text-secondary);
-    }
-
-    .toggle-case-study svg {
-      transition: transform 0.25s ease;
-    }
-
-    .toggle-case-study.open svg {
-      transform: rotate(180deg);
-    }
-
-    /* Expandable Case Study Drawer */
-    .case-study-drawer {
-      display: none;
-      background: #090b10;
-      border-top: 1px solid var(--border-strong);
-      padding: 32px 36px;
-      animation: expandDrawer 0.25s ease-out;
-    }
-
-    .case-study-drawer.open {
-      display: block;
-    }
-
-    @keyframes expandDrawer {
-      from { opacity: 0; transform: translateY(-8px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .drawer-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 32px;
-    }
-
-    .drawer-col h4 {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: #ffffff;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      letter-spacing: -0.01em;
-    }
-
-    .drawer-col p {
-      font-size: 0.88rem;
-      color: var(--text-secondary);
-      line-height: 1.6;
-      margin-bottom: 14px;
-    }
-
-    .drawer-col ul {
-      padding-left: 20px;
-      margin-bottom: 16px;
-      font-size: 0.86rem;
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-
-    .drawer-col li {
-      margin-bottom: 6px;
-    }
-
-    .code-panel {
-      background: #06070a;
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-    }
-
-    .code-header {
-      background: #0f1118;
-      padding: 8px 14px;
-      border-bottom: 1px solid var(--border-subtle);
-      color: var(--text-tertiary);
-      font-size: 0.72rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .code-content {
-      padding: 14px;
-      overflow-x: auto;
-      color: #e2e8f0;
-      line-height: 1.55;
-    }
-
-    .code-content .comment { color: #64748b; }
-    .code-content .keyword { color: #38bdf8; }
-    .code-content .string { color: #34d399; }
-    .code-content .highlight-fn { color: #f59e0b; }
-
-    /* Specialized Domain Showcase: Enterprise Telephony */
-    .domain-hero-card {
-      background: linear-gradient(180deg, rgba(245, 158, 11, 0.05) 0%, var(--bg-surface) 40%);
-      border: 1px solid rgba(245, 158, 11, 0.25);
-      border-radius: var(--radius-xl);
-      padding: 36px;
-      margin-bottom: 32px;
-    }
-
-    .domain-badge-strip {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 20px;
-      align-items: center;
-    }
-
-    .domain-award-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      font-weight: 600;
-      background: rgba(245, 158, 11, 0.14);
-      color: #fbbf24;
-      border: 1px solid rgba(245, 158, 11, 0.35);
-      padding: 6px 12px;
-      border-radius: var(--radius-sm);
-    }
-
-    .domain-track-badge {
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      background: var(--bg-elevated);
-      color: var(--text-primary);
-      border: 1px solid var(--border-strong);
-      padding: 6px 12px;
-      border-radius: var(--radius-sm);
-    }
-
-    .domain-title {
-      font-size: 1.75rem;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      color: #ffffff;
-      margin-bottom: 14px;
-      line-height: 1.25;
-    }
-
-    .domain-lead {
-      font-size: 1.05rem;
-      color: var(--text-secondary);
-      line-height: 1.68;
-      max-width: 920px;
-      margin-bottom: 32px;
-    }
-
-    .domain-capabilities-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      margin-bottom: 36px;
-    }
-
-    .cap-card {
-      background: rgba(14, 16, 23, 0.75);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: border-color 0.2s ease, transform 0.2s ease;
-    }
-
-    .cap-card:hover {
-      border-color: var(--border-strong);
-      transform: translateY(-2px);
-    }
-
-    .cap-num {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      color: #f59e0b;
-      margin-bottom: 12px;
-      display: block;
-      font-weight: 600;
-    }
-
-    .cap-title {
-      font-size: 1rem;
-      font-weight: 600;
-      color: #ffffff;
-      margin-bottom: 8px;
-      letter-spacing: -0.01em;
-    }
-
-    .cap-desc {
-      font-size: 0.85rem;
-      color: var(--text-secondary);
-      line-height: 1.55;
-    }
-
-    /* Enterprise Case Studies Mini Grid */
-    .enterprise-cases-title {
-      font-family: var(--font-mono);
       font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-tertiary);
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      color: var(--text-dim);
+      margin-bottom: 20px;
     }
 
-    .enterprise-cases-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
+    .narrative-block {
+      margin-bottom: 20px;
     }
 
-    .enterprise-case-item {
-      background: #090a0f;
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 20px;
-    }
-
-    .case-badge-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 8px;
-    }
-
-    .case-org {
+    .narrative-heading {
       font-family: var(--font-mono);
       font-size: 0.74rem;
-      color: #fbbf24;
-      font-weight: 600;
-    }
-
-    .case-metric-pill {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      padding: 2px 6px;
-      background: rgba(245, 158, 11, 0.1);
-      border: 1px solid rgba(245, 158, 11, 0.25);
-      color: #f59e0b;
-      border-radius: var(--radius-sm);
-    }
-
-    .case-heading {
-      font-size: 0.96rem;
-      font-weight: 600;
-      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
       margin-bottom: 6px;
     }
 
-    .case-summary {
-      font-size: 0.84rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
+    .narrative-text {
+      font-size: 0.94rem;
+      color: var(--text-muted);
+      line-height: 1.65;
     }
 
-    /* Personal Engineering Ethos (Philosophy) Section */
-    .ethos-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+    .narrative-text strong {
+      color: var(--text-main);
     }
 
-    .ethos-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-xl);
-      padding: 32px 28px;
+    .spec-pills-row {
       display: flex;
-      flex-direction: column;
-      position: relative;
-      overflow: hidden;
-      transition: all 0.25s ease;
-    }
-
-    .ethos-card:hover {
-      border-color: var(--border-strong);
-      transform: translateY(-2px);
-    }
-
-    .ethos-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: var(--radius-md);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-      background: var(--bg-elevated);
-      border: 1px solid var(--border-subtle);
-      color: var(--text-primary);
-    }
-
-    .ethos-title {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 12px;
-      letter-spacing: -0.015em;
-    }
-
-    .ethos-body {
-      font-size: 0.88rem;
-      color: var(--text-secondary);
-      line-height: 1.62;
-      flex: 1;
-    }
-
-    .ethos-quote {
+      flex-wrap: wrap;
+      gap: 6px;
       margin-top: 20px;
-      padding-top: 16px;
-      border-top: 1px solid var(--border-subtle);
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+
+    .spec-pill {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      background: var(--bg-elevated);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .card-links-row {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      margin-top: 20px;
+      font-size: 0.84rem;
+    }
+
+    .text-link {
+      color: var(--text-main);
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      border-bottom: 1px solid var(--border-hover);
+      padding-bottom: 1px;
+    }
+
+    .text-link:hover {
+      border-color: #ffffff;
+      color: #ffffff;
+    }
+
+    /* Philosophy / Ethos Points */
+    .ethos-item {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .ethos-item:last-child {
+      border-bottom: none;
+    }
+
+    .ethos-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .ethos-desc {
+      font-size: 0.94rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* Experience Ledger */
+    .career-item {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .career-item:last-child {
+      border-bottom: none;
+    }
+
+    .career-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .career-role {
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 1rem;
+    }
+
+    .career-date {
       font-family: var(--font-mono);
       font-size: 0.76rem;
-      color: var(--text-tertiary);
+      color: var(--text-dim);
     }
 
-    /* Ledger Table for Experience & Accreditations */
-    .ledger {
-      border-top: 1px solid var(--border-subtle);
-    }
-
-    .ledger-row {
-      display: grid;
-      grid-template-columns: 240px 1fr 160px;
-      gap: 24px;
-      padding: 24px 0;
-      border-bottom: 1px solid var(--border-subtle);
-      align-items: baseline;
-    }
-
-    .ledger-org {
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: var(--text-primary);
-    }
-
-    .ledger-sub {
+    .career-org {
       font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--text-tertiary);
-      margin-top: 2px;
+      font-size: 0.8rem;
+      color: var(--accent-amber);
+      margin-bottom: 8px;
     }
 
-    .ledger-role {
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: var(--text-primary);
-      margin-bottom: 6px;
-    }
-
-    .ledger-notes {
-      font-size: 0.875rem;
-      color: var(--text-secondary);
-      line-height: 1.55;
-    }
-
-    .ledger-date {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      color: var(--text-tertiary);
-      text-align: right;
-    }
-
-    /* Legal & Documentation Layout */
-    .doc-container {
-      max-width: 820px;
-      margin: 0 auto;
-    }
-
-    .doc-header {
-      padding-bottom: 28px;
-      border-bottom: 1px solid var(--border-subtle);
-      margin-bottom: 32px;
-    }
-
-    .doc-title {
-      font-size: 2.2rem;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      margin-bottom: 10px;
-      color: #ffffff;
-    }
-
-    .doc-meta {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      color: var(--text-tertiary);
-    }
-
-    .compliance-banner {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-strong);
-      border-left: 3px solid var(--accent-emerald);
-      padding: 20px 24px;
-      border-radius: var(--radius-md);
-      margin-bottom: 36px;
-    }
-
-    .compliance-banner p {
-      font-size: 0.92rem;
-      color: var(--text-primary);
-      margin: 0;
+    .career-body {
+      font-size: 0.9rem;
+      color: var(--text-muted);
       line-height: 1.6;
     }
 
-    .doc-section {
-      margin-bottom: 36px;
+    /* Documentation / Legal */
+    .doc-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
     }
 
-    .doc-section h3 {
-      font-size: 1.12rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin-bottom: 14px;
-      letter-spacing: -0.01em;
+    .doc-box h2 {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin-bottom: 16px;
     }
 
-    .doc-section p,
-    .doc-section ul {
-      font-size: 0.925rem;
-      color: var(--text-secondary);
+    .doc-box h3 {
+      font-size: 1.1rem;
+      color: #ffffff;
+      margin: 24px 0 10px;
+    }
+
+    .doc-box p, .doc-box ul {
+      font-size: 0.92rem;
+      color: var(--text-muted);
       line-height: 1.7;
       margin-bottom: 14px;
     }
 
-    .doc-section ul {
+    .doc-box ul {
       padding-left: 20px;
     }
 
-    .doc-section li {
-      margin-bottom: 8px;
+    .doc-box li {
+      margin-bottom: 6px;
     }
 
-    .doc-section strong {
-      color: var(--text-primary);
-      font-weight: 600;
-    }
-
-    /* Support Layout */
-    .support-split {
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 32px;
-      margin-bottom: 64px;
-    }
-
-    .support-box {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 32px;
-    }
-
-    .contact-field {
+    .compliance-callout {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-left: 3px solid var(--accent-emerald);
+      padding: 16px 20px;
+      border-radius: 6px;
       margin-bottom: 24px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid var(--border-subtle);
-    }
-
-    .contact-field:last-of-type {
-      border-bottom: none;
-    }
-
-    .field-label {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-tertiary);
-      margin-bottom: 6px;
-    }
-
-    .field-value {
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: var(--text-primary);
-    }
-
-    .faq-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .faq-entry {
-      padding-bottom: 20px;
-      border-bottom: 1px solid var(--border-subtle);
-    }
-
-    .faq-entry:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .faq-question {
-      font-weight: 600;
-      font-size: 0.94rem;
-      color: var(--text-primary);
-      margin-bottom: 6px;
-    }
-
-    .faq-answer {
-      font-size: 0.88rem;
-      color: var(--text-secondary);
-      line-height: 1.6;
+      font-size: 0.9rem;
+      color: #e2e8f0;
     }
 
     /* Footer */
     footer {
-      border-top: 1px solid var(--border-subtle);
-      background: #06070a;
-      padding: 44px 0;
+      border-top: 1px solid var(--border);
+      padding: 40px 0;
       font-size: 0.82rem;
-      color: var(--text-tertiary);
+      color: var(--text-dim);
       margin-top: auto;
     }
 
@@ -1250,1052 +507,507 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 16px;
     }
 
-    .footer-nav {
+    .footer-links {
       display: flex;
-      gap: 24px;
-      flex-wrap: wrap;
+      gap: 18px;
     }
 
-    .footer-nav a:hover {
-      color: var(--text-primary);
+    .footer-links a:hover {
+      color: var(--text-main);
     }
 
-    /* Responsive */
-    @media (max-width: 1024px) {
-      .metrics-bar {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      .pillars-grid {
-        grid-template-columns: 1fr;
-      }
-      .domain-capabilities-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .ethos-grid {
-        grid-template-columns: 1fr;
-      }
-      .drawer-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 768px) {
+    @media (max-width: 640px) {
       .nav-bar {
         height: auto;
-        padding: 16px 0;
+        padding: 14px 0;
         flex-direction: column;
         align-items: flex-start;
-        gap: 14px;
+        gap: 12px;
       }
       .nav-menu {
         width: 100%;
         overflow-x: auto;
         padding-bottom: 4px;
-        scrollbar-width: none;
       }
-      .metrics-bar {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .card-main {
+      .story-card {
         padding: 24px;
       }
-      .domain-hero-card {
-        padding: 24px;
-      }
-      .domain-capabilities-grid {
-        grid-template-columns: 1fr;
-      }
-      .enterprise-cases-grid {
-        grid-template-columns: 1fr;
-      }
-      .support-split {
-        grid-template-columns: 1fr;
-      }
-      .ledger-row {
-        grid-template-columns: 1fr;
-        gap: 6px;
-      }
-      .ledger-date {
-        text-align: left;
+      .doc-box {
+        padding: 20px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation Header -->
+  <!-- Navigation -->
   <header>
     <div class="container nav-bar">
-      <div class="brand" onclick="switchTab('portfolio')">
-        <div class="brand-monogram">RB</div>
-        <div class="brand-meta">
-          <span class="brand-name">Rahel Baig Moghal</span>
-          <span class="brand-role">Cloud Telephony &middot; Offline Systems &middot; Agentic Tools</span>
-        </div>
+      <div class="brand" onclick="navigate('story')">
+        <div class="brand-avatar">RB</div>
+        <span class="brand-name">Rahel Baig Moghal</span>
       </div>
       <nav>
         <ul class="nav-menu">
-          <li><button class="nav-item active" id="nav-portfolio" onclick="switchTab('portfolio')">Overview</button></li>
-          <li><button class="nav-item" id="nav-telephony" onclick="switchTab('telephony')">Telephony &amp; Cloud</button></li>
-          <li><button class="nav-item" id="nav-ethos" onclick="switchTab('ethos')">Philosophy</button></li>
-          <li><button class="nav-item" id="nav-fahm" onclick="switchTab('fahm')">Fahm App</button></li>
-          <li><button class="nav-item" id="nav-privacy" onclick="switchTab('privacy')">Privacy</button></li>
-          <li><button class="nav-item" id="nav-support" onclick="switchTab('support')">Support</button></li>
+          <li><button class="nav-btn active" id="btn-story" onclick="navigate('story')">Story</button></li>
+          <li><button class="nav-btn" id="btn-projects" onclick="navigate('projects')">Projects</button></li>
+          <li><button class="nav-btn" id="btn-telephony" onclick="navigate('telephony')">Telephony &amp; AWS</button></li>
+          <li><button class="nav-btn" id="btn-fahm" onclick="navigate('fahm')">Fahm (فهم)</button></li>
+          <li><button class="nav-btn" id="btn-privacy" onclick="navigate('privacy')">Privacy</button></li>
+          <li><button class="nav-btn" id="btn-contact" onclick="navigate('contact')">Contact</button></li>
         </ul>
       </nav>
-      <div class="nav-actions">
-        <a href="https://www.linkedin.com/in/rahel-baig-moghal-a49948222/" target="_blank" rel="noopener noreferrer" class="nav-external">
-          LinkedIn
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-        </a>
-        <a href="https://github.com/Rahel-Baig-Moghal" target="_blank" rel="noopener noreferrer" class="nav-external">
-          GitHub
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-        </a>
-      </div>
     </div>
   </header>
 
   <main class="container">
 
-    <!-- VIEW 1: PORTFOLIO & ENGINEERING OVERVIEW -->
-    <section id="view-portfolio" class="view-section active">
-      <div class="hero">
-        <div class="status-badge">
-          <span class="status-dot"></span>
-          <span>SDE @ ConnectGen &rarr; Neuraflash &middot; &ldquo;Jack of All Trades&rdquo; Awardee &middot; AWS Certified Cloud Practitioner &amp; Amazon Connect Specialist</span>
-        </div>
-
-        <h1 class="hero-title">
-          Architecting <span class="gradient-text">zero-privilege cloud telephony,</span> local-first mobile engines, and resilient agent systems.
-        </h1>
-
-        <p class="hero-lead">
-          I build high-leverage software across three exacting domains: <strong>enterprise cloud contact centers</strong> with automated CI/CD state promotion, <strong>100% offline mobile applications</strong> with radical data sovereignty, and <strong>type-safe agentic infrastructure</strong> bridging local LLMs with frontier cloud workflows.
-        </p>
-
-        <!-- High-Impact Metrics Strip -->
-        <div class="metrics-bar">
-          <div class="metric-item">
-            <span class="metric-value emerald">100% Offline</span>
-            <span class="metric-label">Fahm Air-Gapped Engine</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-value amber">Zero Static Keys</span>
-            <span class="metric-label">Relay STS AssumeRole</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-value indigo">10,000+</span>
-            <span class="metric-label">Daily AWS Interactions</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-value">&lt; 10 Mins</span>
-            <span class="metric-label">Connect Marketplace Deploy</span>
-          </div>
-          <div class="metric-item">
-            <span class="metric-value emerald">170 Levels</span>
-            <span class="metric-label">On-Device SQLite Storage</span>
-          </div>
-        </div>
-
-        <div class="tech-strip">
-          <span class="tech-tag highlight">Amazon Connect</span>
-          <span class="tech-tag highlight">AWS STS AssumeRole</span>
-          <span class="tech-tag">AWS Lambda</span>
-          <span class="tech-tag">Amazon Lex</span>
-          <span class="tech-tag">DynamoDB (Single-Table)</span>
-          <span class="tech-tag">AWS SAM</span>
-          <span class="tech-tag highlight">React Native (SQLite)</span>
-          <span class="tech-tag">TypeBox</span>
-          <span class="tech-tag highlight">Local LLMs (Ollama / Arch)</span>
-          <span class="tech-tag">Python &middot; TypeScript</span>
-        </div>
-
-        <div class="btn-group">
-          <button class="btn btn-solid" onclick="scrollToElement('featured-projects')">
-            Explore Core Projects
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
-          </button>
-          <button class="btn btn-outline" onclick="switchTab('telephony')">
-            Enterprise Telephony Track
-          </button>
-          <button class="btn btn-ghost" onclick="switchTab('ethos')">
-            Engineering Philosophy
-          </button>
-        </div>
-      </div>
-
-      <!-- FEATURED PROJECTS: 3 HIGH-CONVERSION CARDS -->
-      <div id="featured-projects" class="section-block">
-        <div class="section-header">
-          <h2 class="section-title">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            Featured Architectural Deployments
-          </h2>
-          <span class="section-meta">01 // FLAGSHIP SYSTEMS</span>
-        </div>
-
-        <div class="cards-stack">
-
-          <!-- PROJECT 1: FAHM (فهم) -->
-          <div class="showcase-card theme-fahm">
-            <div class="card-main">
-              <div class="card-top-bar">
-                <div class="card-identity">
-                  <div class="card-emblem fahm">فهم</div>
-                  <div class="card-title-group">
-                    <h3>Fahm (فهم) &mdash; Offline-First Quranic Vocabulary Engine</h3>
-                    <span class="card-tagline">Target: Android (<code>com.rahel.fahm</code>) &amp; iOS &middot; Distraction-Free Learning</span>
-                  </div>
-                </div>
-                <div class="card-pills">
-                  <span class="pill pill-emerald">Google Play Live</span>
-                  <span class="pill pill-neutral">Air-Gapped Client</span>
-                </div>
-              </div>
-
-              <p class="card-desc">
-                A distraction-free, 100% offline mobile learning companion engineered to teach high-frequency Quranic vocabulary across <strong>170 progressive mastery levels</strong>. Designed around uncompromised user data ownership, deterministic local persistence, and frictionless retrieval without any cloud reliance.
-              </p>
-
-              <!-- Badges Row -->
-              <div class="card-badges-row">
-                <span class="badge-chip"><strong>Engine:</strong> React Native</span>
-                <span class="badge-chip"><strong>Database:</strong> On-Device SQLite (<code>user_progress.db</code>)</span>
-                <span class="badge-chip"><strong>Permissions:</strong> Zero Network (Manifest Blocked)</span>
-                <span class="badge-chip"><strong>Scope:</strong> 170 Mastery Levels</span>
-                <span class="badge-chip"><strong>Data Portability:</strong> JSON Export / Import</span>
-                <span class="badge-chip"><strong>Workflow:</strong> Gemini Argon LLM Sprint</span>
-              </div>
-
-              <!-- 3 Core Architectural Pillars -->
-              <div class="pillars-grid">
-                <div class="pillar-box">
-                  <div class="pillar-header">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    Radical Data Sovereignty
-                  </div>
-                  <div class="pillar-body">
-                    Network permissions are explicitly stripped at the Android manifest level (<code>android.permission.INTERNET</code> removed). Zero remote API calls, zero telemetry SDKs, zero third-party trackers.
-                  </div>
-                </div>
-
-                <div class="pillar-box">
-                  <div class="pillar-header">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-                    Local-First Architecture
-                  </div>
-                  <div class="pillar-body">
-                    Complete state persistence within an embedded SQLite database (<code>user_progress.db</code>), coupled with native operating system document pickers for deterministic JSON export, backup, and restore.
-                  </div>
-                </div>
-
-                <div class="pillar-box">
-                  <div class="pillar-header">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                    Engineering Leverage
-                  </div>
-                  <div class="pillar-body">
-                    Synthesized end-to-end linguistic taxonomy, root classifications, and multi-tier spaced-repetition logic using high-leverage LLM pipelines (Gemini Argon sprint), packaged into production React Native.
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-actions-bar">
-                <div class="btn-group">
-                  <button class="btn btn-solid" onclick="switchTab('fahm')">Full Product Spec</button>
-                  <a href="https://play.google.com/store/apps/details?id=com.rahel.fahm" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                    Google Play Store
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                  </a>
-                  <button class="btn btn-ghost" onclick="switchTab('privacy')">Privacy &amp; Compliance</button>
-                </div>
-                <button class="toggle-case-study" onclick="toggleDrawer('drawer-fahm', this)">
-                  <span>Technical Case Study</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-                </button>
-              </div>
-            </div>
-
-            <!-- Deep Dive Case Study Drawer -->
-            <div id="drawer-fahm" class="case-study-drawer">
-              <div class="drawer-grid">
-                <div class="drawer-col">
-                  <h4>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                    Deep Dive: Deterministic Air-Gapped State Engine
-                  </h4>
-                  <p>
-                    Most mobile apps treat user privacy as a policy checkbox. Fahm enforces it as a compile-time invariant. By removing the network permission token from the Android build configuration, operating system kernel guarantees that the runtime cannot instantiate outbound sockets.
-                  </p>
-                  <ul>
-                    <li><strong>Embedded Schema:</strong> Direct SQLite queries over indexed word stems, frequency tiers, and user interaction logs without ORM overhead.</li>
-                    <li><strong>Spaced Repetition:</strong> Leitner interval algorithm calculated purely locally using system Unix epoch clocks.</li>
-                    <li><strong>Zero Dependencies:</strong> No Firebase, no Sentry, no Google Play Services dependencies for core execution.</li>
-                  </ul>
-                </div>
-                <div class="drawer-col">
-                  <div class="code-panel">
-                    <div class="code-header">
-                      <span>AndroidManifest.xml &amp; SQLite Schema</span>
-                      <span>AIR-GAP CONTRACT</span>
-                    </div>
-                    <pre class="code-content"><code><span class="comment">&lt;!-- AndroidManifest.xml: Internet explicitly prohibited --&gt;</span>
-&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"&gt;
-  <span class="comment">&lt;!-- Zero android.permission.INTERNET declaration --&gt;</span>
-  &lt;application android:allowBackup="true" ...&gt;
-    ...
-  &lt;/application&gt;
-&lt;/manifest&gt;
-
-<span class="comment">-- user_progress.db schema snapshot</span>
-<span class="keyword">CREATE TABLE</span> progress (
-  word_id <span class="keyword">INTEGER PRIMARY KEY</span>,
-  level_id <span class="keyword">INTEGER NOT NULL</span>,
-  mastery_score <span class="keyword">REAL DEFAULT 0.0</span>,
-  last_reviewed <span class="keyword">INTEGER</span>,
-  next_due <span class="keyword">INTEGER</span>
-);</code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- PROJECT 2: RELAY -->
-          <div class="showcase-card theme-relay">
-            <div class="card-main">
-              <div class="card-top-bar">
-                <div class="card-identity">
-                  <div class="card-emblem relay">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-                  </div>
-                  <div class="card-title-group">
-                    <h3>Relay &mdash; Multi-Account Control Plane &amp; CI/CD Engine</h3>
-                    <span class="card-tagline">Target: Amazon Connect Enterprise Telephony &middot; Cross-Environment Orchestration</span>
-                  </div>
-                </div>
-                <div class="card-pills">
-                  <span class="pill pill-amber">Enterprise Architecture</span>
-                  <span class="pill pill-neutral">AWS Serverless</span>
-                </div>
-              </div>
-
-              <p class="card-desc">
-                An enterprise orchestration platform that solves the hardest operational problem in cloud contact centers: <strong>safely promoting, diffing, and deploying Amazon Connect contact flows and telephony resources across isolated AWS accounts</strong> (Dev &rarr; Staging &rarr; Production) with zero long-lived credentials.
-              </p>
-
-              <!-- Badges Row -->
-              <div class="card-badges-row">
-                <span class="badge-chip"><strong>Auth:</strong> AWS STS AssumeRole (Ephemeral)</span>
-                <span class="badge-chip"><strong>Database:</strong> DynamoDB Single-Table</span>
-                <span class="badge-chip"><strong>Ingress:</strong> API Gateway REST</span>
-                <span class="badge-chip"><strong>Integration:</strong> Amazon Connect API</span>
-                <span class="badge-chip"><strong>IaC:</strong> AWS SAM</span>
-                <span class="badge-chip"><strong>State:</strong> S3-Versioned Snapshots</span>
-                <span class="badge-chip"><strong>Engine:</strong> Step Functions</span>
-              </div>
-
-              <!-- 3 Core Architectural Pillars -->
-              <div class="pillars-grid">
-                <div class="pillar-box">
-                  <div class="pillar-header">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                    Zero Long-Lived Credentials
-                  </div>
-                  <div class="pillar-body">
-                    Eliminates static IAM access keys entirely. Operates via short-lived AWS STS AssumeRole sessions strictly partitioned into read-only discovery roles (inventory &amp; export) and isolated deployment roles (mutation).
-                  </div>
-                </div>
-
-                <div class="pillar-box">
-                  <div class="pillar-header">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-                    State Snapshots &amp; Verification
-                  </div>
-                  <div class="pillar-body">
-                    Every promotion takes an immutable S3-versioned artifact snapshot paired with a DynamoDB single-table control plane, providing comprehensive audit trails and verifiable cross-environment parity.
-                  </div>
-                </div>
-
-                <div class="pillar-box">
-                  <div class="pillar-header">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
-                    Resilient Automation
-                  </div>
-                  <div class="pillar-body">
-                    Automated dry-runs, structural JSON diffing of contact flow graphs, and AWS Step Function state machines for reliable, asynchronous deployments with deterministic automated rollback on validation failure.
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-actions-bar">
-                <div class="btn-group">
-                  <button class="btn btn-solid" onclick="switchTab('telephony')">Explore Telephony Practice</button>
-                  <a href="https://github.com/Rahel-Baig-Moghal" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                    View Architecture on GitHub
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                  </a>
-                </div>
-                <button class="toggle-case-study" onclick="toggleDrawer('drawer-relay', this)">
-                  <span>Technical Case Study</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-                </button>
-              </div>
-            </div>
-
-            <!-- Deep Dive Case Study Drawer -->
-            <div id="drawer-relay" class="case-study-drawer">
-              <div class="drawer-grid">
-                <div class="drawer-col">
-                  <h4>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                    Deep Dive: Cross-Account STS AssumeRole Pattern
-                  </h4>
-                  <p>
-                    Deploying telephony contact flows across AWS accounts (e.g. staging to production) is traditionally fraught with manual exports, ID drift, and dangerous credential sharing. Relay implements a hardened hub-and-spoke security model:
-                  </p>
-                  <ul>
-                    <li><strong>Central Control Plane:</strong> Hosted in an orchestration account with DynamoDB single-table design storing deployment execution state, dry-run diffs, and target instance ARNs.</li>
-                    <li><strong>Discovery vs. Mutation:</strong> Separate IAM roles in target accounts. The discovery role can only call <code>connect:DescribeContactFlow</code> and <code>connect:ListContactFlows</code>. The deployment role requires an active Step Function execution token to call <code>connect:UpdateContactFlowContent</code>.</li>
-                    <li><strong>Flow Dependency Resolution:</strong> Rewrites hardcoded Lambda ARNs, Lex bot aliases, and Queue IDs during promotion based on environment configuration mappings.</li>
-                  </ul>
-                </div>
-                <div class="drawer-col">
-                  <div class="code-panel">
-                    <div class="code-header">
-                      <span>AssumeRole Promotion Pattern</span>
-                      <span>SECURITY ARCHITECTURE</span>
-                    </div>
-                    <pre class="code-content"><code><span class="comment"># Ephemeral STS AssumeRole token retrieval</span>
-<span class="keyword">import</span> boto3
-
-sts_client = boto3.client(<span class="string">'sts'</span>)
-assumed = sts_client.assume_role(
-    RoleArn=<span class="string">"arn:aws:iam::PROD_ACCT:role/RelayDeployerRole"</span>,
-    RoleSessionName=<span class="string">"Relay-Deploy-Flow-Prod-1042"</span>,
-    DurationSeconds=900 <span class="comment"># 15-minute lease</span>
-)
-
-creds = assumed[<span class="string">'Credentials'</span>]
-prod_connect = boto3.client(
-    <span class="string">'connect'</span>,
-    aws_access_key_id=creds[<span class="string">'AccessKeyId'</span>],
-    aws_secret_access_key=creds[<span class="string">'SecretAccessKey'</span>],
-    aws_session_token=creds[<span class="string">'SessionToken'</span>]
-)
-
-<span class="comment"># Automated dry-run and diff validation prior to mutation</span>
-diff = calculate_flow_diff(source_flow, target_flow)
-<span class="keyword">if</span> diff.has_breaking_changes():
-    <span class="keyword">raise</span> StepFunctionRollback(<span class="string">"Validation failure: missing routing queues"</span>)</code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- PROJECT 3: AGENTIC INFRASTRUCTURE (tools-for-pi) -->
-          <div class="showcase-card theme-agents">
-            <div class="card-main">
-              <div class="card-top-bar">
-                <div class="card-identity">
-                  <div class="card-emblem agents">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-                  </div>
-                  <div class="card-title-group">
-                    <h3>Agentic Infrastructure &mdash; tools-for-pi</h3>
-                    <span class="card-tagline">Target: Autonomous Coding Harnesses &middot; Local Workflow Automation</span>
-                  </div>
-                </div>
-                <div class="card-pills">
-                  <span class="pill pill-indigo">Agent Systems</span>
-                  <span class="pill pill-neutral">TypeScript / TypeBox</span>
-                </div>
-              </div>
-
-              <p class="card-desc">
-                Custom tooling and modular extension packages built for local agent harnesses (the Pi coding agent), extending LLM capabilities into deterministic, type-safe workspace automation, headless task execution, and automated credential management.
-              </p>
-
-              <!-- Badges Row -->
-              <div class="card-badges-row">
-                <span class="badge-chip"><strong>Contracts:</strong> TypeBox Schema Declarations</span>
-                <span class="badge-chip"><strong>Auth:</strong> Automated OAuth2 Token Lifecycle</span>
-                <span class="badge-chip"><strong>Integrations:</strong> Google Calendar API &middot; Workspace CLI</span>
-                <span class="badge-chip"><strong>Local LLMs:</strong> Ollama / LM Studio (Arch Linux)</span>
-                <span class="badge-chip"><strong>Frontier:</strong> Gemini Argon / Flash</span>
-                <span class="badge-chip"><strong>Paradigm:</strong> Headless Agent Automation</span>
-              </div>
-
-              <!-- 3 Core Architectural Pillars -->
-              <div class="pillars-grid">
-                <div class="pillar-box">
-                  <div class="pillar-header">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-                    Type-Safe Agent Harness
-                  </div>
-                  <div class="pillar-body">
-                    Moving beyond casual prompting into concrete agentic layers: strict TypeBox schema declarations guaranteeing that LLM tool calls validate cleanly before runtime execution, eliminating hallucinated arguments.
-                  </div>
-                </div>
-
-                <div class="pillar-box">
-                  <div class="pillar-header">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
-                    Autonomous Token Lifecycle
-                  </div>
-                  <div class="pillar-body">
-                    Built headless OAuth2 token refresh loops and local file-backed secure token caches (e.g. for Google Calendar API), enabling autonomous agent runs that survive token expirations without user interruption.
-                  </div>
-                </div>
-
-                <div class="pillar-box">
-                  <div class="pillar-header">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                    Hybrid AI Mindset
-                  </div>
-                  <div class="pillar-body">
-                    Deep hands-on execution running local open-weights models (Qwen, Spark 4B via Ollama on Arch Linux) for low-latency, private tasks paired with frontier cloud models (Gemini Flash/Argon) for complex architecture.
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-actions-bar">
-                <div class="btn-group">
-                  <button class="btn btn-solid" onclick="switchTab('ethos')">Read Engineering Ethos</button>
-                  <a href="https://github.com/Rahel-Baig-Moghal" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                    View Tool Extensions
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7H7M17 7V17"/></svg>
-                  </a>
-                </div>
-                <button class="toggle-case-study" onclick="toggleDrawer('drawer-agents', this)">
-                  <span>Technical Case Study</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-                </button>
-              </div>
-            </div>
-
-            <!-- Deep Dive Case Study Drawer -->
-            <div id="drawer-agents" class="case-study-drawer">
-              <div class="drawer-grid">
-                <div class="drawer-col">
-                  <h4>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-                    Deep Dive: TypeBox Contracts &amp; OAuth2 Headless Harness
-                  </h4>
-                  <p>
-                    Autonomous agents fail when tool signatures are ambiguous or when authentication tokens expire midway through a long-running execution. In <code>tools-for-pi</code>:
-                  </p>
-                  <ul>
-                    <li><strong>Compile-time Type Safety:</strong> Tools export strict TypeBox schemas that compile directly to JSON Schema for the LLM function calling spec while providing static TypeScript types for the implementation handler.</li>
-                    <li><strong>Autonomous OAuth2 Loop:</strong> Detects 401 Unauthorized errors from Google APIs, invokes a non-interactive refresh token exchange using stored credentials, and retries the failed operation without crashing the agent context.</li>
-                    <li><strong>Local Model Optimization:</strong> Tool definitions are pruned of redundant descriptions to minimize prompt token overhead for 4B/7B local models running on Ollama.</li>
-                  </ul>
-                </div>
-                <div class="drawer-col">
-                  <div class="code-panel">
-                    <div class="code-header">
-                      <span>TypeBox Tool Declaration &amp; Refresh Loop</span>
-                      <span>AGENT CONTRACT</span>
-                    </div>
-                    <pre class="code-content"><code><span class="keyword">import</span> { Type, Static } <span class="keyword">from</span> <span class="string">'@sinclair/typebox'</span>;
-
-<span class="comment">// TypeBox schema ensures runtime and compile-time parity</span>
-<span class="keyword">export const</span> CreateEventParams = Type.Object({
-  summary: Type.String({ description: <span class="string">'Event title'</span> }),
-  startTime: Type.String({ format: <span class="string">'date-time'</span> }),
-  endTime: Type.String({ format: <span class="string">'date-time'</span> }),
-  attendees: Type.Optional(Type.Array(Type.String({ format: <span class="string">'email'</span> })))
-});
-
-<span class="keyword">export type</span> CreateEventInput = Static&lt;<span class="keyword">typeof</span> CreateEventParams&gt;;
-
-<span class="comment">// Headless execution with auto-refreshing OAuth2 client</span>
-<span class="keyword">export async function</span> executeCreateEvent(params: CreateEventInput) {
-  <span class="keyword">const</span> authClient = <span class="keyword">await</span> getValidOAuth2Client();
-  <span class="keyword">return</span> calendar.events.insert({ auth: authClient, ...params });
-}</code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- EXPERIENCE & CREDENTIALS SNAPSHOT -->
-      <div class="section-block" style="margin-bottom: 0;">
-        <div class="section-header">
-          <h2 class="section-title">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            Professional Experience &amp; Credentials
-          </h2>
-          <span class="section-meta">02 // CAREER TRACK</span>
-        </div>
-
-        <div class="ledger">
-
-          <div class="ledger-row">
-            <div>
-              <div class="ledger-org">AMCONNECTGEN &rarr; Neuraflash</div>
-              <div class="ledger-sub">Cloud Contact Center Systems</div>
-            </div>
-            <div>
-              <div class="ledger-role">Software Development Engineer &middot; Associate Developer</div>
-              <p class="ledger-notes">
-                Architecting enterprise Amazon Connect transformations, custom agent workspaces, Lex conversational bots, and serverless automation for high-volume enterprise clients. Recipient of the <strong>&ldquo;Jack of All Trades&rdquo;</strong> engineering award. Transitioning to Neuraflash.
-              </p>
-            </div>
-            <div class="ledger-date">2024 &mdash; Present</div>
-          </div>
-
-          <div class="ledger-row">
-            <div>
-              <div class="ledger-org">Amazon Web Services</div>
-              <div class="ledger-sub">Official Accreditations</div>
-            </div>
-            <div>
-              <div class="ledger-role">AWS Certified Cloud Practitioner &amp; Amazon Connect Specialist</div>
-              <p class="ledger-notes">
-                Verified professional expertise in AWS cloud infrastructure, least-privilege IAM security, serverless event-driven design, and enterprise Amazon Connect telephony deployment. AWS Solutions Architect &mdash; Professional in progress.
-              </p>
-            </div>
-            <div class="ledger-date">Verified</div>
-          </div>
-
-          <div class="ledger-row">
-            <div>
-              <div class="ledger-org">BIHER &mdash; Chennai, India</div>
-              <div class="ledger-sub">Academic Foundation</div>
-            </div>
-            <div>
-              <div class="ledger-role">Bachelor of Technology &mdash; Automobile Engineering</div>
-              <p class="ledger-notes">
-                Core engineering fundamentals in physics, kinematic systems, state modeling, and industrial process optimization applied directly to software systems and distributed cloud architecture.
-              </p>
-            </div>
-            <div class="ledger-date">Graduated 2022</div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- VIEW 2: SPECIALIZED TELEPHONY & CLOUD ENGINEERING -->
-    <section id="view-telephony" class="view-section">
+    <!-- VIEW 1: THE STORY (MAIN EDITORIAL PROFILE) -->
+    <section id="view-story" class="view-pane active">
       
-      <div class="domain-hero-card">
-        <div class="domain-badge-strip">
-          <span class="domain-award-badge">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            &ldquo;Jack of All Trades&rdquo; Engineering Awardee
-          </span>
-          <span class="domain-track-badge">AMCONNECTGEN &rarr; Neuraflash</span>
-          <span class="domain-track-badge">AWS Certified Cloud Practitioner</span>
-          <span class="domain-track-badge">Amazon Connect Specialist</span>
-        </div>
+      <div class="hero-kicker">
+        <span class="dot-live"></span>
+        <span>Software Engineer &middot; SDE @ ConnectGen &rarr; Neuraflash</span>
+      </div>
 
-        <h1 class="domain-title">Enterprise Cloud Contact Center &amp; Telephony Engineering</h1>
-        <p class="domain-lead">
-          Specializing in end-to-end cloud contact center modernizations: transforming legacy PBX and on-premises telephony into scalable, low-latency Amazon Connect architectures with intelligent skills-based routing, real-time CRM integrations, and resilient conversational AI.
-        </p>
+      <h1 class="hero-heading">
+        I build software that respects people, and cloud systems that don’t break when real volume hits.
+      </h1>
 
-        <!-- 4 Core Domain Pillars -->
-        <div class="domain-capabilities-grid">
-          
-          <div class="cap-card">
-            <div>
-              <span class="cap-num">01 // TELEPHONY CORE</span>
-              <h3 class="cap-title">Dynamic Routing &amp; ACD</h3>
-              <p class="cap-desc">
-                Architecting intelligent, skills-based and proficiency-matching routing algorithms for complex enterprise contact queues. Multi-channel queue prioritizing (Voice, Chat, Tasks) with WebRTC audio paths.
-              </p>
-            </div>
+      <p class="story-intro">
+        Most software today is either too fragile or too intrusive. Mobile apps demand internet connections just to look up a word. Cloud contact centers rely on engineers manually pasting JSON between environments with dangerous root credentials. And "AI engineering" often dissolves into toy prompts that fail the moment a token expires.<br><br>
+        <strong>I build the antidote to that.</strong> My work spans three focused areas:
+      </p>
+
+      <!-- CHAPTER 1: THREE CORE SYSTEMS -->
+      <div class="chapter">
+        <div class="chapter-label">01 // THE CORE WORK</div>
+        <h2 class="chapter-title">Three things I built to solve real problems</h2>
+
+        <!-- Project 1: Fahm -->
+        <div class="story-card">
+          <div class="card-meta-top">
+            <span class="card-badge badge-fahm">100% Offline Mobile</span>
+            <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-dim);">Android &middot; iOS &middot; React Native</span>
           </div>
+          <h3 class="card-project-title">
+            <span class="arabic-emblem">فهم</span>
+            Fahm: Quranic Vocabulary Engine
+          </h3>
+          <div class="card-tagline">Distraction-free learning through 170 progressive mastery levels</div>
 
-          <div class="cap-card">
-            <div>
-              <span class="cap-num">02 // CONVERSATIONAL AI</span>
-              <h3 class="cap-title">Amazon Lex &amp; IVR</h3>
-              <p class="cap-desc">
-                Designing natural-language IVR bots with sub-second AWS Lambda fulfillment pipelines. FAQ automation, automated callback scheduling, intent disambiguation, and graceful live-agent escalation.
-              </p>
-            </div>
-          </div>
-
-          <div class="cap-card">
-            <div>
-              <span class="cap-num">03 // AGENT WORKSPACES</span>
-              <h3 class="cap-title">CRM &amp; CTI Integration</h3>
-              <p class="cap-desc">
-                Building custom agent desktop experiences, Salesforce and Zendesk CTI integrations, Step Functions dynamic scripting guides, and real-time agent-to-agent collaboration systems.
-              </p>
-            </div>
-          </div>
-
-          <div class="cap-card">
-            <div>
-              <span class="cap-num">04 // RESILIENCE</span>
-              <h3 class="cap-title">Event-Driven Serverless</h3>
-              <p class="cap-desc">
-                Constructing fault-tolerant backend architectures supporting 10,000+ daily interactions across S3, SQS, DynamoDB, and EventBridge, backed by CloudWatch Logs Insights and AWS X-Ray tracing.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Enterprise Case Studies Mini Grid -->
-        <div class="enterprise-cases-title">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-          Selected Enterprise Deliveries &amp; Case Studies
-        </div>
-
-        <div class="enterprise-cases-grid">
-          
-          <div class="enterprise-case-item">
-            <div class="case-badge-row">
-              <span class="case-org">AWS MARKETPLACE SOLUTION</span>
-              <span class="case-metric-pill">80% Faster Provisioning</span>
-            </div>
-            <h4 class="case-heading">Contact Center Builder &mdash; Automated Telephony Provisioning</h4>
-            <p class="case-summary">
-              Led the design and architecture of a self-service web platform enabling automated Amazon Connect provisioning in under 10 minutes (down from hours), deployed across 15+ enterprise customers with microservices on API Gateway, Lambda, and Cognito.
+          <div class="narrative-block">
+            <div class="narrative-heading">Why it exists</div>
+            <p class="narrative-text">
+              Educational apps are flooded with ads, account walls, tracking SDKs, and subscription popups that break when you enter airplane mode. I wanted a companion that gives the user complete focus and complete ownership.
             </p>
           </div>
 
-          <div class="enterprise-case-item">
-            <div class="case-badge-row">
-              <span class="case-org">SURECALL HEALTHCARE &amp; TELEPHONY</span>
-              <span class="case-metric-pill">Zero Downtime Migration</span>
-            </div>
-            <h4 class="case-heading">Legacy Amtelco to Amazon Connect Migration</h4>
-            <p class="case-summary">
-              Executed full-scale migration from legacy Amtelco PBX to a cloud-native Amazon Connect ecosystem with HIPAA compliance, step-by-step agent guides, and real-time EHR data sync via Lambda and Step Functions.
+          <div class="narrative-block">
+            <div class="narrative-heading">How it’s engineered</div>
+            <p class="narrative-text">
+              Network permissions are <strong>stripped entirely at the Android manifest level</strong>. It is physically impossible for the app to instantiate an outbound socket. All 170 vocabulary levels, linguistic roots, and spaced-repetition schedules live inside an on-device SQLite database (<code>user_progress.db</code>). If you switch phones, you export a clean JSON file with zero remote dependencies. The curriculum and taxonomy were structured in a high-leverage LLM sprint (Gemini Argon) and compiled into React Native.
             </p>
           </div>
 
-          <div class="enterprise-case-item">
-            <div class="case-badge-row">
-              <span class="case-org">SERVE7 MANAGED SERVICES</span>
-              <span class="case-metric-pill">99.9% Production Uptime</span>
-            </div>
-            <h4 class="case-heading">High-Availability Multi-Region Operations</h4>
-            <p class="case-summary">
-              Managed production contact center operations supporting 10,000+ daily calls, resolving critical call flow timeouts via CloudWatch Logs Insights and X-Ray, while implementing real-time Salesforce context retrieval to boost first-call resolution by 18%.
+          <div class="spec-pills-row">
+            <span class="spec-pill">Zero Network Calls</span>
+            <span class="spec-pill">Embedded SQLite</span>
+            <span class="spec-pill">170 Levels</span>
+            <span class="spec-pill">JSON Backup/Restore</span>
+            <span class="spec-pill">Google Play Live</span>
+          </div>
+
+          <div class="card-links-row">
+            <a href="https://play.google.com/store/apps/details?id=com.rahel.fahm" target="_blank" rel="noopener noreferrer" class="text-link">
+              View on Google Play &rarr;
+            </a>
+            <button onclick="navigate('fahm')" class="text-link" style="background: none; border: none; cursor: pointer; border-bottom: 1px solid var(--border-hover);">
+              Read System Spec &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2: Relay -->
+        <div class="story-card">
+          <div class="card-meta-top">
+            <span class="card-badge badge-relay">Cloud Architecture</span>
+            <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-dim);">AWS Serverless &middot; Amazon Connect</span>
+          </div>
+          <h3 class="card-project-title">Relay: Multi-Account CI/CD for Amazon Connect</h3>
+          <div class="card-tagline">Safe cross-environment flow promotion (Dev &rarr; Staging &rarr; Prod) with zero long-lived keys</div>
+
+          <div class="narrative-block">
+            <div class="narrative-heading">Why it exists</div>
+            <p class="narrative-text">
+              Moving telephony flows between isolated AWS environments is the hardest operational problem in enterprise contact centers. Teams resort to manual JSON copy-pasting or sharing persistent admin IAM keys across accounts. One broken queue ID drops live emergency calls or sales lines.
             </p>
           </div>
 
-          <div class="enterprise-case-item">
-            <div class="case-badge-row">
-              <span class="case-org">FLOWFORGEAI &mdash; GENAI POC</span>
-              <span class="case-metric-pill">70% Dev Time Reduction</span>
-            </div>
-            <h4 class="case-heading">Amazon Bedrock LLMs to Connect Flow Generation</h4>
-            <p class="case-summary">
-              Architected a generative AI solution using Amazon Bedrock Agents that translates natural language contact center requirements into deployable Amazon Connect contact flow JSON structures with automated schema validation.
+          <div class="narrative-block">
+            <div class="narrative-heading">How it’s engineered</div>
+            <p class="narrative-text">
+              Relay eliminates long-lived IAM keys entirely. It operates strictly through ephemeral <strong>AWS STS AssumeRole sessions</strong> partitioned into read-only discovery roles and guarded deployment mutation roles. Every promotion takes an S3-versioned artifact snapshot and logs to a DynamoDB single-table control plane. Before mutating production, Step Function state machines run automated graph diffs and dry-runs, guaranteeing deterministic rollback if validation fails.
             </p>
           </div>
 
-        </div>
-
-      </div>
-
-      <div class="btn-group" style="justify-content: center; margin-top: 32px;">
-        <button class="btn btn-solid" onclick="switchTab('portfolio')">&larr; Back to Systems Overview</button>
-        <a href="mailto:rahelbaig1@gmail.com?subject=Telephony%20Architecture%20Consulting" class="btn btn-outline">Schedule Architecture Consultation</a>
-      </div>
-    </section>
-
-
-    <!-- VIEW 3: PERSONAL ENGINEERING ETHOS (PHILOSOPHY) -->
-    <section id="view-ethos" class="view-section">
-      <div class="doc-header">
-        <div class="eyebrow">ABOUT &middot; ARCHITECTURAL PRINCIPLES</div>
-        <h1 class="doc-title">Engineering Ethos &amp; Philosophy</h1>
-        <div class="doc-meta">Industrial Pragmatism, Local-First Sovereignty &amp; Hybrid AI Leverage</div>
-      </div>
-
-      <div class="ethos-grid">
-
-        <!-- Pillar 1 -->
-        <div class="ethos-card">
-          <div class="ethos-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3 class="ethos-title">Radical Local-First &amp; Data Sovereignty</h3>
-          <p class="ethos-body">
-            I hold a firm conviction that consumer and educational software should work flawlessly without an internet connection, storing data where it belongs: on the user&rsquo;s silicon. Cloud synchronization should always be an explicit, voluntary option&mdash;never a non-negotiable dependency for basic functionality.
-          </p>
-          <div class="ethos-quote">
-            &ldquo;If an app cannot function without a server ping, it is a leased service, not an owned tool.&rdquo;
-          </div>
-        </div>
-
-        <!-- Pillar 2 -->
-        <div class="ethos-card">
-          <div class="ethos-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-          </div>
-          <h3 class="ethos-title">Industrial Pragmatism Over Hype</h3>
-          <p class="ethos-body">
-            I prioritize zero-dependency, robust solutions over bloated frameworks. Whether writing minimal vanilla web frontends, exploring systems programming in Rust, or orchestrating resilient AWS serverless microservices, the goal is always durability, low operational drag, and clear failure boundaries.
-          </p>
-          <div class="ethos-quote">
-            &ldquo;Simple systems fail simply. Complex abstractions fail unpredictably.&rdquo;
-          </div>
-        </div>
-
-        <!-- Pillar 3 -->
-        <div class="ethos-card">
-          <div class="ethos-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-          </div>
-          <h3 class="ethos-title">Hybrid AI &amp; Developer Ergonomics</h3>
-          <p class="ethos-body">
-            I treat AI models as compounding engineering leverage. Deep practical experience running local open-weights models (Qwen, Spark 4B via Ollama on Arch Linux) ensures instant, private feedback loops, while frontier cloud models (Gemini Flash/Argon) are orchestrated for large-scale architectural synthesis and schema modeling.
-          </p>
-          <div class="ethos-quote">
-            &ldquo;Combine the zero-latency privacy of local weights with the breadth of frontier models.&rdquo;
-          </div>
-        </div>
-
-      </div>
-
-      <div class="btn-group" style="justify-content: center; margin-top: 48px;">
-        <button class="btn btn-solid" onclick="switchTab('portfolio')">View Systems Portfolio</button>
-        <a href="https://github.com/Rahel-Baig-Moghal" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Explore Code on GitHub</a>
-      </div>
-    </section>
-
-
-    <!-- VIEW 4: FAHM DEDICATED APPLICATION PAGE -->
-    <section id="view-fahm" class="view-section">
-      <div class="hero">
-        <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 24px;">
-          <div class="card-emblem fahm" style="width: 68px; height: 68px; font-size: 2.2rem;">فهم</div>
-          <div>
-            <div class="eyebrow" style="margin-bottom: 4px;">
-              <span class="status-indicator" style="width: 6px; height: 6px; border-radius: 50%; background: #10b981; display: inline-block;"></span>
-              <span>ANDROID APPLICATION &middot; COM.RAHEL.FAHM &middot; 100% OFFLINE</span>
-            </div>
-            <h1 style="font-size: clamp(2rem, 3.8vw, 2.8rem); font-weight: 800; letter-spacing: -0.03em;">Fahm: Quranic Vocabulary</h1>
-          </div>
-        </div>
-
-        <p class="hero-lead">
-          Master the vocabulary of the Holy Quran through a completely offline mobile learning companion structured into <strong>170 progressive mastery levels</strong>. Engineered for focus, zero data tracking, and lifelong linguistic retention.
-        </p>
-
-        <div class="btn-group">
-          <a href="https://play.google.com/store/apps/details?id=com.rahel.fahm" target="_blank" rel="noopener noreferrer" class="btn btn-solid">
-            Download on Google Play
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-          </a>
-          <button class="btn btn-outline" onclick="switchTab('privacy')">Read Privacy Policy</button>
-          <button class="btn btn-ghost" onclick="switchTab('support')">Support &amp; FAQ</button>
-        </div>
-      </div>
-
-      <div class="section-block">
-        <div class="section-header">
-          <h2 class="section-title">System Architecture &amp; Engineering Principles</h2>
-          <span class="section-meta">TECHNICAL SPECIFICATION</span>
-        </div>
-
-        <div class="pillars-grid" style="grid-template-columns: repeat(4, 1fr);">
-          <div class="pillar-box">
-            <div class="pillar-header" style="color: #34d399;">01 / CURRICULUM</div>
-            <h4 style="font-size: 0.98rem; font-weight: 600; color: #ffffff; margin-bottom: 8px;">170 Progressive Levels</h4>
-            <div class="pillar-body">
-              Systematically ordered from high-frequency Quranic nouns, verbs, and particles to complex triliteral root structures and morphological derivatives.
-            </div>
+          <div class="spec-pills-row">
+            <span class="spec-pill">AWS STS AssumeRole</span>
+            <span class="spec-pill">DynamoDB Control Plane</span>
+            <span class="spec-pill">Amazon Connect API</span>
+            <span class="spec-pill">AWS SAM</span>
+            <span class="spec-pill">Step Functions Rollback</span>
           </div>
 
-          <div class="pillar-box">
-            <div class="pillar-header" style="color: #34d399;">02 / AIR-GAPPED</div>
-            <h4 style="font-size: 0.98rem; font-weight: 600; color: #ffffff; margin-bottom: 8px;">Manifest Air-Gapped</h4>
-            <div class="pillar-body">
-              <code>android.permission.INTERNET</code> is strictly omitted from the production manifest. Zero outbound connections can ever be initiated.
-            </div>
-          </div>
-
-          <div class="pillar-box">
-            <div class="pillar-header" style="color: #34d399;">03 / ZERO TELEMETRY</div>
-            <h4 style="font-size: 0.98rem; font-weight: 600; color: #ffffff; margin-bottom: 8px;">Zero Telemetry</h4>
-            <div class="pillar-body">
-              No accounts, no email capture, no third-party analytics trackers, no crash loggers, and zero advertising frameworks.
-            </div>
-          </div>
-
-          <div class="pillar-box">
-            <div class="pillar-header" style="color: #34d399;">04 / PERSISTENCE</div>
-            <h4 style="font-size: 0.98rem; font-weight: 600; color: #ffffff; margin-bottom: 8px;">SQLite + JSON</h4>
-            <div class="pillar-body">
-              All learning streaks and spaced repetition schedules reside locally in <code>user_progress.db</code> with native OS document picker backup.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- VIEW 5: PRIVACY POLICY (GOOGLE PLAY CONSOLE COMPLIANT) -->
-    <section id="view-privacy" class="view-section">
-      <div class="doc-container">
-        <div class="doc-header">
-          <div class="eyebrow">LEGAL DOCUMENTATION &middot; GOOGLE PLAY COMPLIANCE</div>
-          <h1 class="doc-title">Privacy Policy &mdash; Fahm: Quranic Vocabulary</h1>
-          <div class="doc-meta">Effective Date: October 17, 2026 &middot; Package ID: com.rahel.fahm</div>
-        </div>
-
-        <div class="compliance-banner">
-          <p>
-            <strong>Compliance Declaration:</strong> Fahm: Quranic Vocabulary operates entirely offline on your local device. The application does not collect, store, transmit, or share any personal user data, device identifiers, or usage telemetry.
-          </p>
-        </div>
-
-        <div class="doc-section">
-          <h3>1. 100% Offline Architecture &amp; Zero Data Collection</h3>
-          <p>
-            <strong>Fahm: Quranic Vocabulary</strong> ("the App", package identifier <code>com.rahel.fahm</code>) is developed and published by <strong>Rahel Baig Moghal</strong>.
-          </p>
-          <ul>
-            <li><strong>No Network Permissions:</strong> The App requests zero network access. Specifically, <code>android.permission.INTERNET</code> is explicitly blocked in the production Android manifest.</li>
-            <li><strong>No Personal Information Collected:</strong> We do not collect, request, store, transmit, or share any personally identifiable information (PII), account credentials, location coordinates, or device identifiers.</li>
-            <li><strong>No Third-Party SDKs or Advertising:</strong> The App integrates zero third-party analytics trackers, crash reporting agents, or advertising networks.</li>
-          </ul>
-        </div>
-
-        <div class="doc-section">
-          <h3>2. Local On-Device Storage &amp; User Sovereignty</h3>
-          <p>
-            All study records, level completions, daily streaks, spaced-repetition schedules, and user preferences are stored strictly on your device inside a local SQLite database file (<code>user_progress.db</code>).
-          </p>
-          <ul>
-            <li><strong>Backup &amp; Restore:</strong> Users may voluntarily export or import their progress as a local JSON file using the operating system's native document picker.</li>
-            <li><strong>Data Deletion:</strong> Users can permanently purge all progress via the in-app Profile reset control, by clearing application storage in Android system settings, or by uninstalling the App.</li>
-          </ul>
-        </div>
-
-        <div class="doc-section">
-          <h3>3. Local Notifications</h3>
-          <p>
-            If enabled by the user, daily study reminders are scheduled strictly on-device via the local operating system alarm manager. No external push notification servers (such as FCM) or remote network tokens are utilized.
-          </p>
-        </div>
-
-        <div class="doc-section">
-          <h3>4. Children's Privacy (COPPA &amp; Google Play Families Policy)</h3>
-          <p>
-            The App is an educational tool suitable for learners of all ages. Because the App collects zero personal data, displays zero advertisements, and performs zero network communication, it complies fully with the Children's Online Privacy Protection Act (COPPA) and the Google Play Families Policy.
-          </p>
-        </div>
-
-        <div class="doc-section">
-          <h3>5. Changes to This Policy</h3>
-          <p>
-            Any updates to this Privacy Policy will be published on this page with an updated effective revision date.
-          </p>
-        </div>
-
-        <div class="doc-section">
-          <h3>6. Developer Contact Information</h3>
-          <p>
-            For questions regarding this Privacy Policy or data safety compliance, contact the developer directly:
-          </p>
-          <ul>
-            <li><strong>Developer:</strong> Rahel Baig Moghal</li>
-            <li><strong>Support Email:</strong> <a href="mailto:rahelbaig1@gmail.com" style="text-decoration: underline; color: #38bdf8;">rahelbaig1@gmail.com</a></li>
-            <li><strong>Developer GitHub:</strong> <a href="https://github.com/Rahel-Baig-Moghal" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #38bdf8;">https://github.com/Rahel-Baig-Moghal</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- VIEW 6: SUPPORT & TERMS OF SERVICE -->
-    <section id="view-support" class="view-section">
-      <div class="doc-container">
-        <div class="doc-header">
-          <div class="eyebrow">APPLICATION SUPPORT &amp; TERMS</div>
-          <h1 class="doc-title">Support, FAQ &amp; Terms of Use</h1>
-          <div class="doc-meta">Direct Support Channel for Fahm (com.rahel.fahm) &amp; Cloud Consulting</div>
-        </div>
-
-        <div class="support-split">
-          <div class="support-box">
-            <div class="contact-field">
-              <div class="field-label">Primary Support Email</div>
-              <div class="field-value">
-                <a href="mailto:rahelbaig1@gmail.com" style="text-decoration: underline; color: #38bdf8;">rahelbaig1@gmail.com</a>
-              </div>
-              <p style="font-size: 0.8rem; color: var(--text-tertiary); margin-top: 4px;">Target response SLA: 24&ndash;48 business hours.</p>
-            </div>
-
-            <div class="contact-field">
-              <div class="field-label">Developer Profile</div>
-              <div class="field-value">
-                <a href="https://github.com/Rahel-Baig-Moghal" target="_blank" rel="noopener noreferrer" style="color: #38bdf8;">github.com/Rahel-Baig-Moghal</a>
-              </div>
-              <p style="font-size: 0.8rem; color: var(--text-tertiary); margin-top: 4px;">Fahm is maintained in a private repository.</p>
-            </div>
-
-            <div class="contact-field">
-              <div class="field-label">Location &amp; Consulting</div>
-              <div class="field-value">Hyderabad, Telangana, India</div>
-              <p style="font-size: 0.8rem; color: var(--text-tertiary); margin-top: 4px;">Available for AWS Serverless &amp; Amazon Connect architecture engagements.</p>
-            </div>
-
-            <a href="mailto:rahelbaig1@gmail.com?subject=Fahm%20Support%20Inquiry" class="btn btn-solid" style="width: 100%; justify-content: center;">
-              Contact Developer Support
+          <div class="card-links-row">
+            <button onclick="navigate('telephony')" class="text-link" style="background: none; border: none; cursor: pointer; border-bottom: 1px solid var(--border-hover);">
+              Explore Telephony Practice &rarr;
+            </button>
+            <a href="https://github.com/Rahel-Baig-Moghal" target="_blank" rel="noopener noreferrer" class="text-link">
+              GitHub Repositories &rarr;
             </a>
           </div>
+        </div>
 
-          <div class="support-box">
-            <div class="field-label" style="margin-bottom: 16px;">Frequently Asked Questions</div>
-            <div class="faq-list">
-              <div class="faq-entry">
-                <div class="faq-question">Does Fahm require an internet connection?</div>
-                <div class="faq-answer">No. <code>android.permission.INTERNET</code> is blocked at the manifest level. All 170 vocabulary levels and linguistic roots are packaged inside the application binary.</div>
-              </div>
+        <!-- Project 3: tools-for-pi -->
+        <div class="story-card">
+          <div class="card-meta-top">
+            <span class="card-badge badge-agents">Agent Tooling</span>
+            <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-dim);">TypeScript &middot; Local LLMs &middot; TypeBox</span>
+          </div>
+          <h3 class="card-project-title">tools-for-pi: Agent Harness Infrastructure</h3>
+          <div class="card-tagline">Modular, type-safe extension packages for autonomous local coding agents</div>
 
-              <div class="faq-entry">
-                <div class="faq-question">Where is my learning progress stored?</div>
-                <div class="faq-answer">Progress is stored strictly on your device inside the local SQLite database (<code>user_progress.db</code>). Nothing is ever uploaded to a remote server.</div>
-              </div>
+          <div class="narrative-block">
+            <div class="narrative-heading">Why it exists</div>
+            <p class="narrative-text">
+              Most "agent engineering" falls apart because models hallucinate tool parameters and crash when authentication tokens expire midway through execution. Autonomous agents need industrial plumbing, not just prompt engineering.
+            </p>
+          </div>
 
-              <div class="faq-entry">
-                <div class="faq-question">How do I transfer my progress to a new phone?</div>
-                <div class="faq-answer">Open the Profile tab in Fahm and select Export Backup to save a JSON file to your device storage. On your new phone, use Import Backup to restore your state.</div>
-              </div>
+          <div class="narrative-block">
+            <div class="narrative-heading">How it’s engineered</div>
+            <p class="narrative-text">
+              Built for the Pi coding agent harness, <code>tools-for-pi</code> implements strict compile-time and runtime validation contracts using <strong>TypeBox</strong> schemas. For third-party services like Google Calendar, it provides an autonomous OAuth2 token lifecycle with local credential caching and non-interactive refresh loops. I run a <strong>hybrid AI setup</strong>: local open-weights (Qwen, Spark 4B via Ollama on Arch Linux) for private, zero-latency execution, paired with frontier cloud models (Gemini Flash/Argon) for architectural synthesis.
+            </p>
+          </div>
 
-              <div class="faq-entry">
-                <div class="faq-question">How do I report a linguistic correction or bug?</div>
-                <div class="faq-answer">Send an email to <code>rahelbaig1@gmail.com</code> with the level number, word entry, and details of the issue.</div>
-              </div>
-            </div>
+          <div class="spec-pills-row">
+            <span class="spec-pill">TypeBox Tool Contracts</span>
+            <span class="spec-pill">Headless OAuth2 Lifecycle</span>
+            <span class="spec-pill">Ollama on Arch Linux</span>
+            <span class="spec-pill">Hybrid AI Workflows</span>
+          </div>
+
+          <div class="card-links-row">
+            <a href="https://github.com/Rahel-Baig-Moghal" target="_blank" rel="noopener noreferrer" class="text-link">
+              View Tool Packages on GitHub &rarr;
+            </a>
           </div>
         </div>
 
-        <div class="doc-section">
-          <h3>Terms of Service</h3>
-          <p>
-            By downloading or using software published by Rahel Baig Moghal (including Fahm: Quranic Vocabulary), you agree to the following terms:
+      </div>
+
+      <!-- CHAPTER 2: THE DAY JOB -->
+      <div class="chapter">
+        <div class="chapter-label">02 // ENTERPRISE TRACK RECORD</div>
+        <h2 class="chapter-title">What I do in enterprise cloud telephony</h2>
+        
+        <p class="prose">
+          By day, I am a Software Development Engineer at <strong>ConnectGen</strong> (transitioning to <strong>Neuraflash</strong>). I received the company's <strong>"Jack of All Trades"</strong> engineering award for delivering across every tier of cloud telephony: from low-level WebRTC voice paths and Lambda fulfillment pipelines to AWS Marketplace platforms.
+        </p>
+
+        <div class="career-item">
+          <div class="career-header">
+            <span class="career-role">Software Development Engineer &middot; Associate Developer</span>
+            <span class="career-date">2024 &mdash; Present</span>
+          </div>
+          <div class="career-org">AMCONNECTGEN &rarr; Neuraflash &middot; Recipient of &ldquo;Jack of All Trades&rdquo; Award</div>
+          <p class="career-body">
+            &bull; <strong>Contact Center Builder:</strong> Designed an AWS Marketplace platform automating Amazon Connect setup via a web wizard, cutting deployment time from hours to under 10 minutes (80% improvement across 15+ enterprises).<br>
+            &bull; <strong>Surecall Migration:</strong> Led the architectural migration from legacy Amtelco PBX hardware to cloud-native Amazon Connect, meeting strict HIPAA compliance with zero downtime.<br>
+            &bull; <strong>Serve7 Production Operations:</strong> Supported 10,000+ daily calls with 99.9% uptime, resolving timeout bottlenecks via CloudWatch Logs Insights and X-Ray.<br>
+            &bull; <strong>Conversational AI:</strong> Built Amazon Lex conversational bots with low-latency AWS Lambda fulfillment and real-time CRM context retrieval (Salesforce/Zendesk).
           </p>
-          <ul>
-            <li><strong>License:</strong> You are granted a personal, non-exclusive, non-transferable, revocable license to use the software for personal, non-commercial educational study.</li>
-            <li><strong>Intellectual Property:</strong> All source code, database schemas, user interface designs, and structured curricula remain the intellectual property of Rahel Baig Moghal.</li>
-            <li><strong>Warranty Disclaimer:</strong> The software is provided "AS IS" without warranty of any kind, express or implied. In no event shall the author be liable for any claim, damages, or other liability arising from the use of the software.</li>
-          </ul>
+        </div>
+
+        <div class="career-item">
+          <div class="career-header">
+            <span class="career-role">Verified Accreditations</span>
+            <span class="career-date">AWS Official</span>
+          </div>
+          <div class="career-org">Amazon Web Services</div>
+          <p class="career-body">
+            AWS Certified Cloud Practitioner &middot; Amazon Connect Developer Specialist &middot; AWS Solutions Architect Professional (In Progress).
+          </p>
+        </div>
+      </div>
+
+      <!-- CHAPTER 3: ENGINEERING ETHOS -->
+      <div class="chapter" style="margin-bottom: 0;">
+        <div class="chapter-label">03 // PHILOSOPHY</div>
+        <h2 class="chapter-title">How I think about building software</h2>
+
+        <div class="ethos-item">
+          <h3 class="ethos-name">1. Radical Local-First &amp; Data Sovereignty</h3>
+          <p class="ethos-desc">
+            If an application cannot work without a remote server ping, it is a leased service, not an owned tool. Whenever I build for people, data belongs on the user's silicon. Local SQLite, native file exports, and zero tracking are not compromises—they are superior engineering.
+          </p>
+        </div>
+
+        <div class="ethos-item">
+          <h3 class="ethos-name">2. Industrial Pragmatism Over Framework Churn</h3>
+          <p class="ethos-desc">
+            Simple systems fail simply. Over-abstracted systems fail unpredictably. Whether writing minimal vanilla web frontends, exploring systems programming in Rust, or architecting serverless microservices on AWS, durability and clear failure boundaries trump trendy abstractions every time.
+          </p>
+        </div>
+
+        <div class="ethos-item">
+          <h3 class="ethos-name">3. Leverage Without Abdication</h3>
+          <p class="ethos-desc">
+            I use AI as high-leverage machinery. Running open weights locally on Arch Linux gives me private, instant feedback loops. Frontier models handle high-order schema synthesis. But the code, the contracts, and the architectural invariants remain strictly disciplined and verified.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- VIEW 2: PROJECTS DIRECTORY -->
+    <section id="view-projects" class="view-pane">
+      <div class="chapter-label">PROJECT PORTFOLIO</div>
+      <h1 class="hero-heading" style="font-size: 2rem; margin-bottom: 24px;">Systems &amp; Deployed Artifacts</h1>
+      <p class="prose" style="margin-bottom: 36px;">
+        Detailed technical breakdown of the flagship projects featured across mobile, enterprise cloud, and agent tooling.
+      </p>
+
+      <div class="story-card">
+        <h3 class="card-project-title">1. Fahm (فهم) &mdash; Offline Quranic Vocabulary</h3>
+        <p class="narrative-text" style="margin: 12px 0;">
+          An offline-first Android/iOS companion teaching high-frequency Quranic vocabulary across 170 mastery levels. Strips <code>android.permission.INTERNET</code> at the manifest level for guaranteed zero data leakage. Local SQLite storage with deterministic JSON portability.
+        </p>
+        <div class="card-links-row">
+          <button onclick="navigate('fahm')" class="text-link" style="background: none; border: none; cursor: pointer; border-bottom: 1px solid var(--border-hover);">
+            Read Full Product Spec &rarr;
+          </button>
+          <button onclick="navigate('privacy')" class="text-link" style="background: none; border: none; cursor: pointer; border-bottom: 1px solid var(--border-hover);">
+            Google Play Privacy Policy &rarr;
+          </button>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <h3 class="card-project-title">2. Relay &mdash; Amazon Connect Control Plane</h3>
+        <p class="narrative-text" style="margin: 12px 0;">
+          Multi-account CI/CD engine for promoting, diffing, and deploying Amazon Connect contact flows and telephony resources between Dev, Staging, and Production. Operates strictly via short-lived AWS STS AssumeRole sessions (15-min leases) with S3 versioning and Step Function rollback.
+        </p>
+        <div class="card-links-row">
+          <button onclick="navigate('telephony')" class="text-link" style="background: none; border: none; cursor: pointer; border-bottom: 1px solid var(--border-hover);">
+            View Telephony Practice &rarr;
+          </button>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <h3 class="card-project-title">3. tools-for-pi &mdash; Agent Harness Tooling</h3>
+        <p class="narrative-text" style="margin: 12px 0;">
+          Type-safe tool extensions for autonomous agent harnesses using TypeBox schemas. Features headless OAuth2 token refresh loops and local LLM orchestration on Arch Linux with Ollama.
+        </p>
+        <div class="card-links-row">
+          <a href="https://github.com/Rahel-Baig-Moghal" target="_blank" rel="noopener noreferrer" class="text-link">
+            GitHub Source &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- VIEW 3: TELEPHONY & CLOUD ENGINEERING -->
+    <section id="view-telephony" class="view-pane">
+      <div class="chapter-label">SPECIALIZED DOMAIN</div>
+      <h1 class="hero-heading" style="font-size: 2rem; margin-bottom: 24px;">Enterprise Cloud Contact Center Engineering</h1>
+      
+      <p class="prose">
+        Software Development Engineer at <strong>ConnectGen</strong> (transitioning to <strong>Neuraflash</strong>). Recipient of the <strong>"Jack of All Trades"</strong> engineering award. Specializing in high-concurrency telephony routing, conversational IVR bots, and serverless AWS architecture.
+      </p>
+
+      <div class="doc-box">
+        <h2>Core Telephony Capabilities</h2>
+        
+        <h3>1. Dynamic Routing &amp; Queue Management</h3>
+        <p>
+          Designing intelligent, skills-based and proficiency-matching routing algorithms for complex enterprise contact queues. Multi-channel queue prioritizing across voice, chat, and task routing with low-latency WebRTC voice paths.
+        </p>
+
+        <h3>2. Conversational AI &amp; Natural-Language IVR</h3>
+        <p>
+          Architecting Amazon Lex conversational bots integrated with sub-second AWS Lambda fulfillment functions. Automated FAQ resolution, appointment scheduling, intent disambiguation, and graceful live-agent warm handoffs.
+        </p>
+
+        <h3>3. Agent Workspaces &amp; CTI Integrations</h3>
+        <p>
+          Custom agent desktop experiences, Salesforce &amp; Zendesk CTI integrations for real-time customer context retrieval, dynamic step-by-step agent scripting via Step Functions, and agent-to-agent collaboration tools.
+        </p>
+
+        <h3>4. Enterprise Deliveries</h3>
+        <ul>
+          <li><strong>Contact Center Builder:</strong> AWS Marketplace self-service provisioning tool reducing setup time from hours to under 10 minutes (80% faster, 15+ enterprises).</li>
+          <li><strong>Surecall Telephony Modernization:</strong> Phased migration from legacy Amtelco PBX to Amazon Connect with HIPAA compliance and zero downtime.</li>
+          <li><strong>Serve7 Managed Services:</strong> 99.9% uptime across multi-region operations supporting 10,000+ daily customer interactions.</li>
+          <li><strong>FlowForgeAI (Bedrock POC):</strong> Translating natural-language requirements into deployable Amazon Connect contact flow JSON structures using Bedrock LLMs.</li>
+        </ul>
+      </div>
+
+      <div class="card-links-row">
+        <button onclick="navigate('story')" class="text-link" style="background: none; border: none; cursor: pointer; border-bottom: 1px solid var(--border-hover);">
+          &larr; Back to Story
+        </button>
+        <button onclick="navigate('contact')" class="text-link" style="background: none; border: none; cursor: pointer; border-bottom: 1px solid var(--border-hover);">
+          Contact for Consulting &rarr;
+        </button>
+      </div>
+    </section>
+
+
+    <!-- VIEW 4: FAHM APP SPECIFICATION -->
+    <section id="view-fahm" class="view-pane">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+        <span class="arabic-emblem" style="font-size: 2.4rem;">فهم</span>
+        <div>
+          <h1 style="font-size: 2rem; color: #ffffff; letter-spacing: -0.02em;">Fahm: Quranic Vocabulary</h1>
+          <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim);">Android (<code>com.rahel.fahm</code>) &middot; iOS</span>
+        </div>
+      </div>
+
+      <p class="prose">
+        Fahm is a 100% offline mobile learning companion engineered to teach high-frequency Quranic vocabulary through <strong>170 progressive mastery levels</strong>. It was designed from day one to respect the learner's attention and data.
+      </p>
+
+      <div class="doc-box">
+        <h2>System Architecture Invariants</h2>
+        
+        <h3>Air-Gapped Manifest Enforcement</h3>
+        <p>
+          The application deliberately omits <code>android.permission.INTERNET</code> from its production manifest. The operating system kernel enforces that no outbound network connections can be initiated.
+        </p>
+
+        <h3>Embedded SQLite Persistence</h3>
+        <p>
+          All spaced-repetition schedules, mastery scores, and streak data live strictly on-device inside <code>user_progress.db</code>. No remote database or synchronization server is ever touched.
+        </p>
+
+        <h3>Native JSON Portability</h3>
+        <p>
+          Users maintain complete ownership of their study data. At any time, you can export a complete JSON backup to your phone's storage or import a previous backup on a new device.
+        </p>
+
+        <h3>Distraction-Free Experience</h3>
+        <p>
+          Zero advertising frameworks, zero third-party analytics SDKs, zero user account registrations, and zero tracking telemetry.
+        </p>
+      </div>
+
+      <div class="card-links-row">
+        <a href="https://play.google.com/store/apps/details?id=com.rahel.fahm" target="_blank" rel="noopener noreferrer" class="text-link">
+          Download on Google Play &rarr;
+        </a>
+        <button onclick="navigate('privacy')" class="text-link" style="background: none; border: none; cursor: pointer; border-bottom: 1px solid var(--border-hover);">
+          Privacy Policy &rarr;
+        </button>
+      </div>
+    </section>
+
+
+    <!-- VIEW 5: PRIVACY POLICY (GOOGLE PLAY COMPLIANT) -->
+    <section id="view-privacy" class="view-pane">
+      <div class="doc-box">
+        <div class="chapter-label">LEGAL DOCUMENTATION &middot; GOOGLE PLAY COMPLIANCE</div>
+        <h2>Privacy Policy &mdash; Fahm: Quranic Vocabulary</h2>
+        <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim); margin-bottom: 20px;">
+          Effective Date: October 17, 2026 &middot; Package ID: com.rahel.fahm
+        </div>
+
+        <div class="compliance-callout">
+          <strong>Compliance Declaration:</strong> Fahm: Quranic Vocabulary operates entirely offline on your local device. The application does not collect, store, transmit, or share any personal user data, device identifiers, or usage telemetry.
+        </div>
+
+        <h3>1. 100% Offline Architecture &amp; Zero Data Collection</h3>
+        <p>
+          <strong>Fahm: Quranic Vocabulary</strong> ("the App", package identifier <code>com.rahel.fahm</code>) is developed and published by <strong>Rahel Baig Moghal</strong>.
+        </p>
+        <ul>
+          <li><strong>No Network Permissions:</strong> The App requests zero network access. Specifically, <code>android.permission.INTERNET</code> is explicitly blocked in the production Android manifest.</li>
+          <li><strong>No Personal Information Collected:</strong> We do not collect, request, store, transmit, or share any personally identifiable information (PII), account credentials, location coordinates, or device identifiers.</li>
+          <li><strong>No Third-Party SDKs or Advertising:</strong> The App integrates zero third-party analytics trackers, crash reporting agents, or advertising networks.</li>
+        </ul>
+
+        <h3>2. Local On-Device Storage &amp; User Sovereignty</h3>
+        <p>
+          All study records, level completions, daily streaks, spaced-repetition schedules, and user preferences are stored strictly on your device inside a local SQLite database file (<code>user_progress.db</code>).
+        </p>
+        <ul>
+          <li><strong>Backup &amp; Restore:</strong> Users may voluntarily export or import their progress as a local JSON file using the operating system's native document picker.</li>
+          <li><strong>Data Deletion:</strong> Users can permanently purge all progress via the in-app Profile reset control, by clearing application storage in Android system settings, or by uninstalling the App.</li>
+        </ul>
+
+        <h3>3. Local Notifications</h3>
+        <p>
+          If enabled by the user, daily study reminders are scheduled strictly on-device via the local operating system alarm manager. No external push notification servers (such as FCM) or remote network tokens are utilized.
+        </p>
+
+        <h3>4. Children's Privacy (COPPA &amp; Google Play Families Policy)</h3>
+        <p>
+          The App is an educational tool suitable for learners of all ages. Because the App collects zero personal data, displays zero advertisements, and performs zero network communication, it complies fully with the Children's Online Privacy Protection Act (COPPA) and the Google Play Families Policy.
+        </p>
+
+        <h3>5. Developer Contact</h3>
+        <p>
+          For questions regarding this Privacy Policy or data safety compliance, contact the developer directly:
+        </p>
+        <ul>
+          <li><strong>Developer:</strong> Rahel Baig Moghal</li>
+          <li><strong>Email:</strong> <a href="mailto:rahelbaig1@gmail.com" style="text-decoration: underline; color: #38bdf8;">rahelbaig1@gmail.com</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/Rahel-Baig-Moghal" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #38bdf8;">github.com/Rahel-Baig-Moghal</a></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- VIEW 6: CONTACT & SUPPORT -->
+    <section id="view-contact" class="view-pane">
+      <div class="chapter-label">COMMUNICATION</div>
+      <h1 class="hero-heading" style="font-size: 2rem; margin-bottom: 24px;">Get in Touch</h1>
+      
+      <p class="prose" style="margin-bottom: 32px;">
+        Whether you are looking for enterprise cloud contact center architecture consulting, want to discuss offline-first software, or have feedback on Fahm, feel free to reach out.
+      </p>
+
+      <div class="doc-box">
+        <h2>Direct Channels</h2>
+        
+        <div style="margin-bottom: 20px;">
+          <div class="narrative-heading">Primary Email</div>
+          <div style="font-size: 1rem; font-weight: 500; color: #ffffff;">
+            <a href="mailto:rahelbaig1@gmail.com" style="color: #38bdf8; text-decoration: underline;">rahelbaig1@gmail.com</a>
+          </div>
+          <p style="font-size: 0.82rem; color: var(--text-dim); margin-top: 4px;">Target response time: 24–48 business hours.</p>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <div class="narrative-heading">Professional Profiles</div>
+          <div style="font-size: 0.95rem; line-height: 1.8;">
+            &bull; LinkedIn: <a href="https://www.linkedin.com/in/rahel-baig-moghal-a49948222/" target="_blank" rel="noopener noreferrer" style="color: #38bdf8;">linkedin.com/in/rahel-baig-moghal</a><br>
+            &bull; GitHub: <a href="https://github.com/Rahel-Baig-Moghal" target="_blank" rel="noopener noreferrer" style="color: #38bdf8;">github.com/Rahel-Baig-Moghal</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="narrative-heading">Location</div>
+          <div style="font-size: 0.95rem; color: #ffffff;">Hyderabad, Telangana, India</div>
+          <p style="font-size: 0.82rem; color: var(--text-dim); margin-top: 4px;">Available for remote architecture &amp; development engagements worldwide.</p>
         </div>
       </div>
     </section>
@@ -2306,46 +1018,34 @@ diff = calculate_flow_diff(source_flow, target_flow)
   <footer>
     <div class="container footer-inner">
       <div>
-        <span style="color: var(--text-primary); font-weight: 600;">Rahel Baig Moghal</span>
-        <span style="margin: 0 8px; color: var(--border-strong);">/</span>
+        <span style="color: var(--text-main); font-weight: 600;">Rahel Baig Moghal</span>
+        <span style="margin: 0 8px; color: var(--border);">&bull;</span>
         <span>&copy; 2026 All rights reserved.</span>
       </div>
-      <div class="footer-nav">
-        <a href="#portfolio" onclick="switchTab('portfolio'); return false;">Overview</a>
-        <a href="#telephony" onclick="switchTab('telephony'); return false;">Telephony &amp; Cloud</a>
-        <a href="#ethos" onclick="switchTab('ethos'); return false;">Philosophy</a>
-        <a href="#fahm" onclick="switchTab('fahm'); return false;">Fahm App</a>
-        <a href="#privacy" onclick="switchTab('privacy'); return false;">Privacy Policy</a>
-        <a href="#support" onclick="switchTab('support'); return false;">Support</a>
-        <a href="https://github.com/Rahel-Baig-Moghal" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/rahel-baig-moghal-a49948222/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <div class="footer-links">
+        <a href="#story" onclick="navigate('story'); return false;">Story</a>
+        <a href="#projects" onclick="navigate('projects'); return false;">Projects</a>
+        <a href="#telephony" onclick="navigate('telephony'); return false;">Telephony</a>
+        <a href="#fahm" onclick="navigate('fahm'); return false;">Fahm</a>
+        <a href="#privacy" onclick="navigate('privacy'); return false;">Privacy</a>
+        <a href="#contact" onclick="navigate('contact'); return false;">Contact</a>
       </div>
     </div>
   </footer>
 
   <script>
-    const validTabs = ['portfolio', 'telephony', 'ethos', 'fahm', 'privacy', 'support'];
+    const validViews = ['story', 'projects', 'telephony', 'fahm', 'privacy', 'contact'];
 
-    function switchTab(tabId) {
-      const target = validTabs.includes(tabId) ? tabId : 'portfolio';
+    function navigate(viewId) {
+      const target = validViews.includes(viewId) ? viewId : 'story';
 
-      document.querySelectorAll('.view-section').forEach(section => {
-        section.classList.remove('active');
-      });
+      document.querySelectorAll('.view-pane').forEach(el => el.classList.remove('active'));
+      const activeEl = document.getElementById('view-' + target);
+      if (activeEl) activeEl.classList.add('active');
 
-      const activeSection = document.getElementById('view-' + target);
-      if (activeSection) {
-        activeSection.classList.add('active');
-      }
-
-      document.querySelectorAll('.nav-item').forEach(btn => {
-        btn.classList.remove('active');
-      });
-
-      const activeNavBtn = document.getElementById('nav-' + target);
-      if (activeNavBtn) {
-        activeNavBtn.classList.add('active');
-      }
+      document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById('btn-' + target);
+      if (activeBtn) activeBtn.classList.add('active');
 
       window.scrollTo({ top: 0, behavior: 'instant' });
 
@@ -2354,37 +1054,17 @@ diff = calculate_flow_diff(source_flow, target_flow)
       }
     }
 
-    function toggleDrawer(drawerId, btn) {
-      const drawer = document.getElementById(drawerId);
-      if (!drawer) return;
-      const isOpen = drawer.classList.contains('open');
-      if (isOpen) {
-        drawer.classList.remove('open');
-        btn.classList.remove('open');
-      } else {
-        drawer.classList.add('open');
-        btn.classList.add('open');
-      }
-    }
-
-    function scrollToElement(id) {
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-
     window.addEventListener('DOMContentLoaded', () => {
       const hash = window.location.hash.replace('#', '').toLowerCase();
-      if (validTabs.includes(hash)) {
-        switchTab(hash);
+      if (validViews.includes(hash)) {
+        navigate(hash);
       }
     });
 
     window.addEventListener('hashchange', () => {
       const hash = window.location.hash.replace('#', '').toLowerCase();
-      if (validTabs.includes(hash)) {
-        switchTab(hash);
+      if (validViews.includes(hash)) {
+        navigate(hash);
       }
     });
   </script>
